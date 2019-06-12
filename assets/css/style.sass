@@ -1,0 +1,52 @@
+$screen: 1680px
+$tablet: 960px
+$mobile: 767px
+$mini: 320px
+$landscape: 420px
+
+///-------My variable--------------------------------
+$fontCnt:'Contur', arial
+$gray: #D4D4D4
+$blue:#00B4DD
+$red: #F25554
+$white: #fff
+$black: #302E32
+/////------------------------------------------------
+body,html, *
+  font-size: 10px
+  color: #fff
+  font-family: 'Lato', sans-serif
+  @media screen and (min-width: 1500px)
+    font-size: 12px
+  @media screen and (max-width: 1024px)
+    font-size: 6px
+a
+  cursor: pointer
+  text-decoration: none
+  a:hover
+    text-decoration: none
+button
+  cursor: pointer
+.btn
+  background: #CE5937
+  background: -moz-linear-gradient(left, $red 0%, #FF9E7A 100%)
+  background: -webkit-linear-gradient(left, $red 0%, #FF9E7A 100%)
+  background: linear-gradient(to right, $red 0%, #FF9E7A 100%)
+  font-weight: 400
+  font-size: 2.66rem
+  line-height: 4.5rem
+  border: none
+  border-radius: 5px
+  color: $white
+  width: 100%
+  height: 40px
+  z-index: 5
+.wrapper_main
+  display: flex
+  flex-direction: column
+  section
+    background-color: #302E32
+    flex-grow: 1
+@import "header"
+@import "main"
+@import "services"

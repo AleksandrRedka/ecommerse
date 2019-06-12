@@ -1,0 +1,113 @@
+.wrapper_services
+  padding: 0 3.5rem
+  padding-top: 8rem
+  .services_title
+    font-size: 4.33rem
+    line-height: 5.66rem
+    font-weight: 600
+    margin-bottom: 3.33rem
+  .advantages_list
+    padding-top: 1.66rem
+    display: flex
+    flex-direction: column
+    margin-bottom: 1.66rem
+    .advantage
+      position: relative
+      display: flex
+      flex-direction: column
+      max-height: 4rem
+      overflow: hidden
+      margin-bottom: 3.33rem
+      transition: max-height 500ms
+      &:hover
+        max-height: 18rem
+        >.advantage_icon
+          transform: translate(-50%,-50%) rotate(90deg)
+      &_icon
+        position: absolute
+        top: 2rem
+        left: 2rem
+        width: 3rem
+        height: 3rem
+        transition: 500ms
+        transform: translate(-50%,-50%)
+        img
+          width: auto
+          height: 100%
+      &_header
+        padding-left: 10%
+        font-size: 2.66rem
+        line-height: 4rem
+        margin-bottom: 1.66rem
+      &_body
+        font-size: 2.66rem
+        line-height: 4rem
+        font-weight: 300
+
+  .advantages_btn
+    width: 100%
+    position: relative
+    color: #D4D4D4
+    font-size: 3rem
+    line-height: 4.5rem
+    margin-bottom: 15rem
+    &:after
+      content: ''
+      width: 50%
+      height: 1rem
+      background-color: $red
+      position: absolute
+      bottom: -4px
+      left: 0
+  .services_list
+    display: flex
+    flex-direction: column
+    .service
+      width: 100vw
+      margin: 0 -6rem
+      padding: 0 10rem
+      height: 15vh
+      display: flex
+      flex-direction: row
+      justify-content: flex-start
+      align-items: center
+      margin-bottom: 1.5rem
+      background-color: rgba(31,29,32,0.5)
+      transition: background-color 500ms
+      &:hover
+        background: #2E2D30
+        background: -moz-linear-gradient(left, #2E2D30 0%, #FF9E7A 100%)
+        background: -webkit-linear-gradient(left, #2E2D30 0%, #FF9E7A 100%)
+        background: linear-gradient(to right, #2E2D30 0%, #FF9E7A 100%)
+        >.service_title:after
+            background-color: #302E32
+      &_icon
+        height: 60%
+        width: auto
+        margin-right: 4rem
+        img
+          width: auto
+          height: 100%
+      &_title
+        position: relative
+        font-size: 2rem
+        line-height: 3rem
+        font-weight: 400
+        &:after
+          transition: background-color 500ms
+          content: ""
+          width: 10vw
+          height: 1rem
+          background-color: $red
+          position: absolute
+          bottom: -5px
+          left: 0
+
+
+
+
+
+
+
+
+
