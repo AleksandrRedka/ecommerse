@@ -55,6 +55,79 @@ $(document).ready(
                     this.uniforms.size = ( h / 400) * pointSize * dpi
                 },
             } )
-        })()
+        })();
+        (function () {
+            $('.menu-js').click(function () {
+                $(this).toggleClass('wrapper_burger_open');
+                $('.wrapper_nav').toggleClass('wrapper_nav_open');
+                $('.navigation_menu_bg').toggleClass('navigation_menu_bg_open');
+            })
+        })();
+        (function () {
+            $('.brief-js').click(function () {
+                $(this).toggleClass('add_brief_open');
+                $('.downloader_brief').toggleClass('brief_open');
+                $('.post_brief').toggleClass('brief_open');
+            })
+        })();
+        (function () {
+            $('.portfolio_slider_text').slick({
+                fade: true,
+                dots: false,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                asNavFor: '.portfolio_slider_img',
+                arrows: false,
+            });
+            $('.portfolio_slider_img').slick({
+                swipe: false,
+                vertical: true,
+                dots: false,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                asNavFor: '.portfolio_slider_text',
+                arrows: true,
+                prevArrow: '<button class="slick-review slick-prev portfolio-slider-prev"><img src="assets/img/svg/Path%20127.svg" alt=""></button>',
+                nextArrow: '<button class="slick-review slick-next portfolio-slider-next"><img src="assets/img/svg/Path%20126.svg" alt=""></button>',
+
+            });
+        })();
+        (function () {
+            $('.slick-prev').click(function () {
+                   $('.client_site_open').removeClass('client_site_open');
+                   $('.slick-active').find('div.client_site').toggleClass('client_site_open');
+
+                }
+            );
+            $('.slick-next').click(function () {
+                    $('.client_site_open').removeClass('client_site_open');
+                    $('.slick-active').find('div.client_site').toggleClass('client_site_open');
+                }
+            )
+        })();
+        (function () {
+            $('.call-js').click(function () {
+                $('body').addClass('body_hidden');
+                $('.wrapper_pop_up').addClass('wrapper_pop_up_open');
+            });
+            $('.close-pop-js').click(function () {
+                $('body').removeClass('body_hidden');
+                $('.wrapper_pop_up').removeClass('wrapper_pop_up_open');
+            });
+
+        })();
+        (function () {
+            $(document).on('scroll', function () {
+                let lengthScroll = $(document).scrollTop();
+                if (lengthScroll > 150) {
+                    $('header').css('background-color', 'rgba(48,46,50,0.7)');
+                } else {
+                    $('header').css('background-color', '')
+
+                }
+            });
+        })();
     })()
 );

@@ -1,0 +1,155 @@
+.section_contacts
+  padding: 13.33rem 1rem 3rem
+  .form_title
+    font-size: 7.33rem
+    line-height: 9rem
+    font-weight: 400
+    margin-bottom: 5rem
+.form_connect
+  display: flex
+  flex-direction: column
+  margin-bottom: 8.33rem
+  &_input
+    width: 100%
+    margin-bottom: 6.66rem
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: flex-end
+    label
+      width: 25%
+      font-weight: 400
+      font-size: 2.66rem
+      line-height: 4rem
+      opacity: 0.5
+    input
+      width: 75%
+      height: 100%
+      background-color: transparent
+      border: none
+      border-bottom: 2px solid $white
+      outline: none
+      font-size: 3rem
+      line-height: 4rem
+      text-indent: 2rem
+      transition: border-bottom-color 500ms
+      &:hover
+        border-bottom: 2px solid $red
+      &:focus+.form_label
+          opacity: 1
+  .form_button_brief
+    position: relative
+    display: flex
+    flex-direction: row
+    align-items: center
+    margin-bottom: 8.33rem
+    .brief_label
+      width: 35%
+      font-weight: 400
+      font-size: 2.66rem
+      line-height: 4rem
+      opacity: 0.5
+      margin-right: 4rem
+    .wrapper_add_brief
+      position: relative
+      display: flex
+      flex-direction: row
+      width: 60%
+      justify-content: space-between
+      .add_brief
+        z-index: 2
+        position: relative
+        width: 6rem
+        height: 6rem
+        background-color: $white
+        &:before
+          content: ''
+          width: 60%
+          height: 2px
+          background-color: $black
+          position: absolute
+          transform: translate(-50%,-50%)
+          top: 50%
+          left: 50%
+          transition: all 500ms
+        &:after
+          content: ''
+          width: 60%
+          height: 2px
+          background-color: $black
+          position: absolute
+          transform: translate(-50%,-50%) rotate(90deg)
+          top: 50%
+          left: 50%
+          transition: all 500ms
+      .add_brief_open
+        &:before
+          transform: translate(-50%,-50%) rotate(45deg)
+        &:after
+          transform: translate(-50%,-50%) rotate(135deg)
+
+      .downloader_brief
+        opacity: 0
+        padding: 1rem
+        width: 6rem
+        height: 6rem
+        background-color: $white
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 1
+        transition: opacity 500ms 200ms
+        img
+          width: 100%
+          height: auto
+
+      .post_brief
+        opacity: 0
+        padding: 1rem
+        width: 6rem
+        height: 6rem
+        background-color: $white
+        left: 0
+        top: 0
+        position: absolute
+        z-index: 1
+        transition: opacity 700ms 200ms
+        img
+          width: 100%
+          height: auto
+
+      .brief_open
+        position: static
+        opacity: 1
+        transition: opacity 500ms
+
+
+.contacts_info
+  display: flex
+  flex-direction: column
+  &_title
+    font-size: 5rem
+    line-height: 6rem
+    font-weight: 700
+    margin-bottom: 5rem
+  &_list
+    display: flex
+    flex-direction: column
+    &_item
+      margin-bottom: 5rem
+      .contacts_item_title
+        font-size: 4rem
+        line-height: 5rem
+        font-weight: 400
+        margin-bottom: 3.33rem
+      .contacts_item_text
+        font-size: 3rem
+        line-height: 4.5rem
+        font-weight: 300
+
+
+.contacts_map
+  padding: 0 2.5rem
+  iframe
+    width: 100%
+    height: 40vh

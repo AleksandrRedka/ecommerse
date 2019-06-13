@@ -8,7 +8,8 @@
     <title>The LAB</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
-    <link href="http://allfont.ru/allfont.css?fonts=ntoutline" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/js/slick/slick.css">
+    <link href="http://allfont.ru/allfont.css?fonts=ntoutline" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="assets/fonts/lato.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -19,7 +20,7 @@
         <div class="wrapper_logo">
             <img src="assets/img/The%20LAB%20logo@2x.png" alt="logo">
         </div>
-        <div class="wrapper_burger d-md-none">
+        <div class="wrapper_burger menu-js d-md-none">
             <div class="burger"></div>
         </div>
 
@@ -56,14 +57,16 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12">
-                   <div class="main_wrapper_title">
-                       <h3 class="main_title">Ecommerse and WEB</h3>
-                       <div class="main_subtitle"><p>&ndash;создаем уникальные и прибыльные проекты</p></div>
-                       <div class="main_subtitle"><p>&ndash;разрабатываем сайты</p></div>
-                       <div class="main_button">
-                           <button class="btn call-js">Познакомится</button>
-                       </div>
-                   </div>
+                    <div class="main_wrapper_title">
+                        <h3 class="main_title">Ecommerse and WEB</h3>
+                        <div class="main_subtitle"><p>&ndash;создаем уникальные и прибыльные проекты</p></div>
+                        <div class="main_subtitle"><p>&ndash;разрабатываем сайты</p></div>
+                        <div class="main_button">
+                            <button class="btn call-js">
+                                <p> Познакомится</p>
+                            </button>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-sm-12">
                     <div class="main_slogan">
@@ -102,7 +105,9 @@
                 </div>
             </div>
         </div>
-        <div class="main_bg"><div class="particles"></div></div>
+        <div class="main_bg">
+            <div class="particles"></div>
+        </div>
     </section>
     <section class="section_services">
         <div class="wrapper_services">
@@ -174,7 +179,7 @@
                                 </div>
                             </div>
                             <div class="advantages_btn call-js">
-                                ЗАКАЗАТЬ
+                                <p>ЗАКАЗАТЬ</p>
                             </div>
                         </div>
                     </div>
@@ -208,57 +213,203 @@
                     </div>
                 </div>
             </div>
+            <div class="services_bg">
+                <css-doodle>
+                    :doodle { @grid: 45x1 / 40vmin; position: relative; z-index: 1; } :container { transform:
+                    translate(50%, 33vmin) } :after, :before { content: ''; @place-cell: center; @size: 100%;
+                    background: radial-gradient( @p(#FFFDE1, #FB3569) @r(70%), transparent
+                    0 ) @pn(30% 50%, 70% 50%, 50% 60%) / @r(.1vmin, 5vmin) @lr() no-repeat; } @place-cell: centerr;
+                    @size: 100%; will-change: transform; animation: r 4s linear infinite; animation-delay: calc(-4s /
+                    @size() * @i()); --translate: translateY(calc(-66vmin /
+                    @size() * @i())); @keyframes r { from { transform: var(--translate) rotate(0) } to { transform:
+                    var(--translate) rotateZ(-1turn) } }
+                </css-doodle>
+                <css-doodle>
+                    :doodle { @grid: 1x3 / 100vmax; position: absolute; top: 0; left: 0; z-index: 0; } @size: 100% 150%;
+                    position: absolute; background: @m(100, ( linear-gradient(transparent, @p( #FFFDE1@repeat(2,
+                    @p([0-9a-f])), #FB3569@repeat(2, @p([0-9a-f])) )) @r(0%,
+                    100%) @r(0%, 100%) / @r(1px) @r(23vmin) no-repeat )); will-change: transform; animation: f 20s
+                    linear calc(-20s / @size() * @i()) infinite; @keyframes f { from { transform: translateY(-100%) } to
+                    { transform: translateY(100%) } }
+                </css-doodle>
+            </div>
         </div>
         <div class="portfolio">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-12 col-lg-12">
                         <div class="portfolio_wrapper_slider_text">
-                            <div class="portfolio_slider_text"></div>
+                            <div class="portfolio_slider_text">
+                                <div class="slider_text_item">
+                                    <div class="clients_info">
+                                        <div class="clients_info_name">BLUE BERRY</div>
+                                        <div class="clients_info_text">
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing
+                                            elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                            aliquyam
+                                            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                                            rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+                                            dolor
+                                            sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+                                            diam
+                                            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                                            clita
+                                            kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                            Lorem
+                                            ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                            tempor
+                                            invidunt ut labore et dolore magna aliquyam
+                                        </div>
+                                        <a href="" class="clients_info_link">VISIT WEBSITE</a>
+                                    </div>
+                                </div>
+                                <div class="slider_text_item">
+                                    <div class="clients_info">
+                                        <div class="clients_info_name">TULIKIVI</div>
+                                        <div class="clients_info_text">Lorem ipsum dolor sit amet, consetetur sadipscing
+                                            elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                            aliquyam
+                                            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                                            rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+                                            dolor
+                                            sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+                                            diam
+                                            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                                            clita
+                                            kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                            Lorem
+                                            ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                            tempor
+                                            invidunt ut labore et dolore magna aliquyam
+                                        </div>
+                                        <a href="" class="clients_info_link">VISIT WEBSITE</a>
+                                    </div>
+                                </div>
+                                <div class="slider_text_item">
+                                    <div class="clients_info">
+                                        <div class="clients_info_name">ISSA</div>
+                                        <div class="clients_info_text">
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing
+                                            elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                            aliquyam
+                                            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                                            rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+                                            dolor
+                                            sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+                                            diam
+                                            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                                            clita
+                                            kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                            Lorem
+                                            ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                            tempor
+                                            invidunt ut labore et dolore magna aliquyam
+                                        </div>
+                                        <a href="" class="clients_info_link">VISIT WEBSITE</a>
+                                    </div>
+                                </div>
+                                <div class="slider_text_item">
+                                    <div class="clients_info">
+                                        <div class="clients_info_name">PROSTOR</div>
+                                        <div class="clients_info_text">
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing
+                                            elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                            aliquyam
+                                            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                                            rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+                                            dolor
+                                            sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+                                            diam
+                                            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                                            clita
+                                            kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                            Lorem
+                                            ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                            tempor
+                                            invidunt ut labore et dolore magna aliquyam
+                                        </div>
+                                        <a href="#" class="clients_info_link">VISIT WEBSITE</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="clients_wrapper_slider_img">
-                            <div class="portfolio_slider_img"></div>
+                        <div class="portfolio_wrapper_slider_img">
+                            <div class="portfolio_slider_img">
+                                <div class="slider_img_item">
+                                    <a href="#" class="client_img">
+                                        <img src="assets/img/blueberry%20main@2x.png" alt="">
+                                        <div class="client_site client_site_open">BLUEBERRY</div>
+                                    </a>
+                                </div>
+                                <div class="slider_img_item">
+                                    <a href="#" class="client_img">
+                                        <img src="assets/img/blueberry%20main@2x.png" alt="">
+                                        <div class="client_site">TULIKIVI</div>
+                                    </a>
+                                </div>
+                                <div class="slider_img_item">
+                                    <a href="#" class="client_img">
+                                        <img src="assets/img/blueberry%20main@2x.png" alt="">
+                                        <div class="client_site">ISSA</div>
+                                    </a>
+                                </div>
+                                <div class="slider_img_item">
+                                    <a href="#" class="client_img">
+                                        <img src="assets/img/blueberry%20main@2x.png" alt="">
+                                        <div class="client_site">PROSTOR</div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-6">
-                    <div class="list_clients">
-                        <a href="#" class="list_clients_item">
-                            <div class="clients_logo">
-                                <img src="assets/img/Blueberry_logo@2x.png" alt="">
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                        <div class="wrapper_list_clients">
+                            <div class="list_clients_title">
+                                CLIENTS
                             </div>
-                            <div class="clients_title">Blueberry</div>
-                        </a>
-                        <a href="#" class="list_clients_item">
-                            <div class="clients_logo">
-                                <img src="assets/img/tulikivi@2x.png" alt="">
+                            <div class="list_clients">
+                                <a href="#" class="list_clients_item">
+                                    <div class="client_logo">
+                                        <img src="assets/img/Blueberry_logo@2x.png" alt="">
+                                    </div>
+                                    <div class="client_title">Blueberry</div>
+                                </a>
+                                <a href="#" class="list_clients_item">
+                                    <div class="client_logo">
+                                        <img src="assets/img/tulikivi@2x.png" alt="">
+                                    </div>
+                                    <div class="client_title">Tulikivi</div>
+                                </a>
+                                <a href="#" class="list_clients_item">
+                                    <div class="client_logo">
+                                        <img src="assets/img/logo@2x.png" alt="">
+                                    </div>
+                                    <div class="client_title">ISSA</div>
+                                </a>
+                                <a href="#" class="list_clients_item">
+                                    <div class="client_logo">
+                                        <img src="assets/img/incrogas@2x.png" alt="">
+                                    </div>
+                                    <div class="client_title">Інкрогаз</div>
+                                </a>
+                                <a href="#" class="list_clients_item">
+                                    <div class="client_logo">
+                                        <img src="assets/img/photo_2019-01-15_16-06-19@2x.png" alt="">
+                                    </div>
+                                    <div class="client_title">Счастье есть</div>
+                                </a>
+                                <a href="#" class="list_clients_item">
+                                    <div class="client_logo">
+                                        <img src="assets/img/Prostor@2x.png" alt="">
+                                    </div>
+                                    <div class="client_title">Prostor</div>
+                                </a>
                             </div>
-                            <div class="clients_title">Tulikivi</div>
-                        </a>
-                        <a href="#" class="list_clients_item">
-                            <div class="clients_logo">
-                                <img src="assets/img/logo@2x.png" alt="">
-                            </div>
-                            <div class="clients_title">ISSA</div>
-                        </a>
-                        <a href="#" class="list_clients_item">
-                            <div class="clients_logo">
-                                <img src="assets/img/incrogas@2x.png" alt="">
-                            </div>
-                            <div class="clients_title">Інкрогаз</div>
-                        </a>
-                        <a href="#" class="list_clients_item">
-                            <div class="clients_logo">
-                                <img src="assets/img/photo_2019-01-15_16-06-19@2x.png" alt="">
-                            </div>
-                            <div class="clients_title">Счастье есть</div>
-                        </a>
-                        <a href="#" class="list_clients_item">
-                            <div class="clients_logo">
-                                <img src="assets/img/Prostor@2x.png" alt="">
-                            </div>
-                            <div class="clients_title">Prostor</div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -266,7 +417,7 @@
     </section>
     <section class="section_about">
         <div class="container-fluid">
-            <div class="row d-flex flex-sm-column flex-lg-column-reverse">
+            <div class="row no-gutters d-flex flex-sm-column flex-lg-column-reverse">
                 <div class="col-sm-12 ">
                     <div class="about_company">
                         <div class="about_title">ABOUT</div>
@@ -274,6 +425,9 @@
                             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                                 invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
                                 accusam et justo duo dolores et ea rebum.</p>
+                        </div>
+                        <div class="about_company_bg">
+                            <img src="assets/img/Subtraction%2012.svg" alt="">
                         </div>
                     </div>
                 </div>
@@ -286,49 +440,63 @@
                         <p>HTML5</p>
                         <p>CSS3</p>
                         <p>Vanila JS</p>
+                        <div class="about_technology_bg">
+                            <img src="assets/img/Subtraction%2011%20.svg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
     </section>
     <section class="section_contacts">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-ms-12">
-                    <div class="col-ms-12">
+                <div class="col-sm-12">
+                    <div class="col-sm-12">
                         <div class="contacts_form">
                             <h3 class="form_title">Познакомится</h3>
                             <form class="form_connect" action="#" method="post">
                                 <div class="form_connect_input">
-                                    <input type="text" id="form_name">
                                     <label class="form_label" for="form_name">Ім'я:*</label>
+                                    <input type="text" id="form_name">
                                 </div>
                                 <div class="form_connect_input">
-                                    <input type="tel" id="form_tel">
                                     <label class="form_label" for="form_tel">Телефон:*</label>
+                                    <input type="tel" id="form_tel">
                                 </div>
                                 <div class="form_connect_input">
+                                    <label class="form_label" for="form_email">Емейл</label>
                                     <input type="email" id="form_email">
-                                    <label class="form_label" for="form_email" id="">Емейл</label>
                                 </div>
                                 <div class="form_button_brief">
-                                    <div class="form_label">Додати бриф</div>
-                                    <div class="add_brief brief-js"></div>
+                                    <div class="brief_label">Додати бриф:</div>
+                                    <div class="wrapper_add_brief">
+                                        <div class="add_brief brief-js">
+                                        </div>
+                                        <div class="downloader_brief downloader-brief-js">
+                                            <img src="assets/img/svg/download_brief.svg" alt="">
+                                        </div>
+                                        <div class="post_brief post-brief-js">
+                                            <img src="assets/img/svg/post_brief.svg" alt="">
+                                        </div>
+                                    </div>
                                 </div>
-                                <button class="btn btn_form">Відправити</button>
+                                <button class="btn form_btn">
+                                    <p>Відправити</p>
+                                </button>
                             </form>
                         </div>
                     </div>
-                    <div class="col-ms-12">
+                    <div class="col-sm-12">
                         <div class="contacts_info">
                             <div class="contacts_info_title">Контакты</div>
                             <div class="contacts_info_list">
                                 <div class="contacts_info_list_item">
                                     <div class="contacts_item_title">Адрес</div>
                                     <div class="contacts_item_text">
-                                        <p>Київ вулиця Введенська, 29/58</p>
+                                        <p>Київ</p>
+                                        <p>вулиця Введенська,</p>
+                                        <p>29/58</p>
                                     </div>
                                 </div>
                                 <div class="contacts_info_list_item">
@@ -343,10 +511,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-ms-12 col-md-12 col-lg-">
+                <div class="col-sm-12 col-md-12 col-lg-5">
                     <div class="contacts_map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.034229143196!2d30.50949810089284!3d50.47186697433765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce13b83211e7%3A0xf663796c4ecaad52!2z0YPQuy4g0JLQstC10LTQtdC90YHQutCw0Y8sIDI5LzU4LCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1560074768639!5m2!1sru!2sua"
-                                 allowfullscreen></iframe>
+                                allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -354,7 +522,7 @@
     </section>
     <footer class="footer">
         <div class="container-fluid">
-            <div class="row">
+            <div class="row d-flex flex-sm-column flex-md-row">
                 <div class="col-sm-12 col-md-4 col-lg-">
                     <div class="footer_logo">
                         <div class="footer_logo_icon">
@@ -364,7 +532,7 @@
                     </div>
                 </div>
                 <div class="col-sm-1 col-md-6">
-                    <div class="footer_create_company">&#169;2019 TheLAB. All Rights Reserved.</div>
+                    <div class="footer_create_company">&#169; 2019 TheLAB. All Rights Reserved.</div>
                 </div>
             </div>
         </div>
@@ -372,9 +540,54 @@
 
     </footer>
 </div>
-
+<!--Pop-up-->
+<div class="wrapper_pop_up">
+    <div class="pop_up_main">
+        <div class="pop_up_title ">Замовити сайт</div>
+        <form class="form_connect pop_up_form" action="#" method="post">
+            <div class="form_connect_input pop_form_input">
+                <label class="form_label" for="pop_form_name">Ім'я:*</label>
+                <input type="text" id="pop_form_name">
+            </div>
+            <div class="form_connect_input pop_form_input">
+                <label class="form_label" for="pop_form_tel">Телефон:*</label>
+                <input type="tel" id="pop_form_tel">
+            </div>
+            <div class="form_connect_input pop_form_input">
+                <label class="form_label" for="pop_form_email" id="">Емейл</label>
+                <input type="email" id="pop_form_email">
+            </div>
+            <div class="form_button_brief pop_button_brief">
+                <div class="brief_label">Додати бриф:</div>
+                <div class="wrapper_add_brief">
+                    <div class="add_brief brief-js">
+                    </div>
+                    <div class="downloader_brief pop_downloader_brief downloader-brief-js">
+                        <img src="assets/img/svg/download_brief.svg" alt="">
+                    </div>
+                    <div class="post_brief pop_post_brief post-brief-js">
+                        <img src="assets/img/svg/post_brief.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <button class="btn pop_up_btn">
+                <p>Відправити</p>
+            </button>
+        </form>
+        <button class="btn pop_up_btn_cancel close-pop-js">
+            <p>Відмінити</p>
+        </button>
+        <div class="pop_bg">
+            <img src="assets/img/svg/Path%2078.svg" alt="">
+        </div>
+    </div>
+    <div class="btn_close close-pop-js"></div>
+</div>
+<!---->
 <!--Scripts JS-->
 <script src="assets/js/jquery.js"></script>
+<script src="https://unpkg.com/css-doodle@0.7.1/css-doodle.min.js"></script>
+<script type="text/javascript" src="assets/js/slick/slick.min.js"></script>
 <script src="assets/js/ShaderProgram.js"></script>
 <script src="assets/js/index.js"></script>
 <!------------>

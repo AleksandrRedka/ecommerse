@@ -1,0 +1,14 @@
+.wrapper_list_clients {
+  padding: 0 3.5rem;
+}
+.wrapper_list_clients .list_clients_title {
+  line-height: 9rem;
+  font-size: 7.33rem;
+  font-weight: 400;
+}
+.wrapper_list_clients .list_clients {
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=list_clients.css.map */
