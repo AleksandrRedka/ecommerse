@@ -1,4 +1,6 @@
 .wrapper_list_clients
+  @media screen and (min-width: $tablet)
+    margin-bottom: 5rem
   .list_clients_title
       line-height: 9rem
       font-size: 7.33rem
@@ -9,7 +11,6 @@
     flex-direction: row
     justify-content: space-between
     flex-wrap: wrap
-    margin-bottom: 13rem
     &_item
       display: flex
       flex-direction: column
@@ -17,6 +18,13 @@
       width: calc(50% - 2.5rem)
       height: 20vh
       margin-bottom: 3.33rem
+      @media screen and (min-width: $mobile)
+        width: calc(33% - 5rem)
+        margin-bottom: 5rem
+        @media screen and (min-width: $tablet)
+          width: calc(34% - 5.5rem)
+        &:nth-child(n + 3)
+          margin-bottom: 0
       .client_logo
         display: flex
         justify-content: center
@@ -26,11 +34,21 @@
         img
           width: 100%
           height: auto
+          @media screen and (max-height: 400px)
+            width: auto
+            height: 100%
       .client_title
         height: 20%
         text-align: center
         font-weight: 300
         font-size: 2.66rem
         line-height: 4rem
+        @media screen and (min-width: $mobile)
+          font-size: 4rem
+          line-height: 3rem
+          @media screen and (min-width: $tablet)
+            font-size: 2.4rem
+            line-height: 2.7rem
+
 
 

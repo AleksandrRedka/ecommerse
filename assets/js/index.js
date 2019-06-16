@@ -58,6 +58,7 @@ $(document).ready(
         })();
         (function () {
             $('.menu-js').click(function () {
+                $('body').toggleClass('body_hidden');
                 $(this).toggleClass('wrapper_burger_open');
                 $('.wrapper_nav').toggleClass('wrapper_nav_open');
                 $('.navigation_menu_bg').toggleClass('navigation_menu_bg_open');

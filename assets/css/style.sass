@@ -1,5 +1,5 @@
 $screen: 1680px
-$tablet: 960px
+$tablet: 1025px
 $mobile: 767px
 $mini: 320px
 $landscape: 420px
@@ -16,7 +16,7 @@ body,html, *
   font-size: 10px
   color: #fff
   font-family: 'Lato', sans-serif
-  @media screen and (min-width: 1500px)
+  @media screen and (min-width: 2000px)
     font-size: 12px
   @media screen and (max-width: 1024px)
     font-size: 6px
@@ -49,10 +49,20 @@ button
   flex-direction: column
   justify-content: center
   align-items: center
+  @media screen and (min-width: $mobile)
+    width: 45%
+    @media screen and (min-width: $tablet)
+      width: 15vw
   p
     font-weight: 400
     font-size: 2.66rem
     line-height: 4.5rem
+    @media screen and (min-width: $mobile)
+      font-size: 3.33rem
+      line-height: 4.5rem
+      @media screen and (min-width: $tablet)
+        font-size: 2rem
+        line-height: 2.4rem
   &:hover
     background: $red
     background: -moz-linear-gradient(left, $red 0%, $red 100%)

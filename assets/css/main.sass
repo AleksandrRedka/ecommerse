@@ -4,15 +4,30 @@ section.section_main
   overflow: hidden
   position: relative
   .main_wrapper_title
-    height: 70vh
+    max-height: 70vh
     padding: 0 3.5rem
-    padding-top: 24rem
+    padding-top: 20vh
+    @media screen and (min-width: $mobile)
+      height: 60vh
+      padding: 0 11.66rem
+      padding-top: 40rem
+      @media screen and (min-width: $tablet)
+        padding: 28vh 20vw 0
+        height: 60vh
     h3
       font-size: 4.33rem
       line-height: 5.66rem
       margin-bottom: 2rem
       font-weight: 400
       position: relative
+      @media screen and (min-width: $mobile)
+        font-size: 8.33rem
+        line-height: 10rem
+        margin-bottom: 4rem
+        @media screen and (min-width: $tablet)
+          font-size: 10rem
+          line-height: 12rem
+
       &:after
         content: ''
         width: 80%
@@ -26,6 +41,11 @@ section.section_main
         background: -moz-linear-gradient(left, #302E32 0%, #00B4DD 100%)
         background: -webkit-linear-gradient(left, #302E32 0%, #00B4DD 100%)
         background: linear-gradient(to right, #302E32 0%, #00B4DD 100%)
+        @media screen and (min-width: $mobile)
+          width: 90%
+          height: 6rem
+          bottom: -6px
+
     .main_subtitle
       display: flex
       justify-content: flex-start
@@ -36,6 +56,12 @@ section.section_main
         font-size: 2rem
         line-height: 3rem
         z-index: 2
+        @media screen and (min-width: $mobile)
+          font-size: 2.33rem
+          line-height: 4rem
+          @media screen and (min-width: $tablet)
+            font-size: 2rem
+            line-height: 2.7rem
         &:after
           position: absolute
           content: ''
@@ -45,20 +71,41 @@ section.section_main
           opacity: 0.4
           bottom: -1px
           left: 0
+          @media screen and (min-width: $mobile)
+            width: 110%
+            @media screen and (min-width: $tablet)
+              width: 105%
+              bottom: -4px
       &:nth-child(3)
         justify-content: flex-end
         margin-top: 5rem
         margin-bottom: 6.66rem
+        @media screen and (min-width: $tablet)
+          margin-bottom: 4rem
+          margin-top: 0
         p
           &:after
             left: auto
             right: 1rem
+            @media screen and (min-width: $tablet)
+              right: -4rem
   .main_button
     margin-bottom: 23rem
+    @media screen and (min-width: $mobile)
+      display: flex
+      flex-direction: row
+      justify-content: flex-end
 
   .main_slogan
     height: 30vh
     padding: 0 3.5rem
+    @media screen and (min-width: $mobile)
+      height: 34vh
+      padding: 11.33rem
+      @media screen and (min-width: $tablet)
+        height: 28vh
+        padding: 0
+        padding-right: 10rem
     &_title
       h1
         position: relative
@@ -70,6 +117,9 @@ section.section_main
         line-height: 12rem
         font-weight: 400
         margin-bottom: 1rem
+        @media screen and (min-width: $tablet)
+          font-size: 6rem
+          line-height: 7.2rem
     &_text
       display: flex
       flex-direction: column
@@ -80,6 +130,12 @@ section.section_main
         line-height: 3.33rem
         font-weight: 200
         margin-bottom: 1.66rem
+        @media screen and (min-width: $mobile)
+          font-size: 3.33rem
+          line-height: 4.5rem
+          @media screen and (min-width: $tablet)
+            font-size: 2rem
+            line-height: 2.7rem
         &:last-child
           margin-bottom: 0
 
@@ -90,25 +146,64 @@ section.section_main
     flex-direction: row
     justify-content: space-between
     flex-wrap: wrap
+    @media screen and (min-width: $mobile)
+      height: 6vh
+      flex-wrap: nowrap
+      padding: 0
+      width: 100vw
+      margin: 0 -15px
+      background-color: $black
+      position: relative
+      z-index: 5
+      @media screen and (min-width: $tablet)
+        height: 13vh
     .main_advantage
       display: flex
       flex-direction: column
       justify-content: space-between
       padding: 1rem 1.5rem
       width: calc(50% - 0.7rem)
-      height: 15vh
+      //height: 15vh
       position: relative
       box-shadow: 0 0 33px 0 rgba(0,0,0, 0.16)
       margin-bottom: 1rem
       border-radius: 5px
+      @media screen and (min-width: $mobile)
+        width: 20%
+        height: 100%
+        padding: 0
+        margin: 0
+        box-shadow: none
+        overflow: hidden
+        display: flex
+        justify-content: center
+        align-items: center
+        border-right: 1px solid $white
       &:last-child
         width: 100%
+        @media screen and (min-width: $mobile)
+          width: 20%
+          border: none
       &_num
         color: #302E32
         text-shadow: 0 -1px #fff, 1px 0 #fff, 0 1px #fff, -1px 0 #fff
         font-size: 5rem
         line-height: 6rem
         position: relative
+        margin-bottom: 3vh
+        @media screen and (min-width: $mobile)
+          position: absolute
+          top: 50%
+          left: 15%
+          transform: translate(-50%,-50%)
+          font-size: 12rem
+          line-height: 12rem
+          color: #3D3A40
+          text-shadow: none
+          font-weight: 700
+          z-index: 1
+          @media screen and (min-width: $tablet)
+            font-size: 20rem
         &:after
           position: absolute
           background: $red
@@ -117,10 +212,21 @@ section.section_main
           height: 1.66rem
           bottom: -2rem
           left: 0
+          @media screen and (min-width: $mobile)
+            display: none
       &_title
         font-size: 2.66rem
         line-height: 4rem
         font-weight: 300
+        @media screen and (min-width: $mobile)
+          position: relative
+          z-index: 6
+          padding-left: 20%
+          @media screen and (min-width: $tablet)
+            font-size: 3rem
+            line-height: 4rem
+            font-weight: 400
+
 
 
 

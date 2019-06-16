@@ -2,12 +2,26 @@
   position: relative
   padding: 0 3.5rem
   overflow: hidden
+  padding-top: 13rem
+  @media screen and (min-width: $mobile)
+    padding: 0 11.33rem
+    @media screen and (min-width: $mobile)
+      height: 100vh
   .about_title
+    position: relative
+    z-index: 3
     line-height: 9rem
     font-size: 7.33rem
     font-weight: 400
     color: #D4D4D4
     margin-bottom: 3.33rem
+    @media screen and (min-width: $mobile)
+      font-size: 16.66rem
+      line-height: 20rem
+      @media screen and (min-width: $tablet)
+        font-size: 19.5rem
+        line-height: 20rem
+        padding-top: 16rem
   .about_text
     margin-bottom: 3rem
     p
@@ -16,13 +30,30 @@
       line-height: 4rem
       font-weight: 400
       z-index: 2
+      @media screen and (min-width: $tablet)
+        font-size: 1.8rem
+        line-height: 2.7rem
+
   &_bg
     z-index: 1
     position: absolute
-    bottom: -12vh
+    bottom: -18vw
     left: -5%
     width: 100vw
     height: 40vh
+    @media screen and (max-height: 400px)
+      left: 7.8vw
+      width: 80vw
+      bottom: 20vw
+    @media screen and (min-width: $mobile)
+      bottom: 0
+      left: -5%
+      @media screen and (min-width: $tablet)
+        transform: rotate(90deg)
+        left: -22vw
+        height: auto
+        bottom: 4.5vw
+        width: 75vw
     img
       width: 100%
       height: auto
@@ -37,6 +68,12 @@
   flex-direction: row
   flex-wrap: wrap
   justify-content: space-between
+  @media screen and (min-width: $mobile)
+    padding: 13.33rem
+    @media screen and (min-width: $mobile)
+      padding: 22rem  13rem
+      min-height: 100vh
+      width: auto
   p
     font-size: 7.33rem
     line-height: 9rem
@@ -44,13 +81,34 @@
     margin-bottom: 4rem
     position: relative
     z-index: 2
+    @media screen and (min-width: $mobile)
+      font-size: 15rem
+      line-height: 18rem
+      @media screen and (min-width: $tablet)
+        font-size: 10rem
+        line-height: 12rem
   .about_technology_bg
     z-index: 1
     position: absolute
-    top: -9vh
+    top: -16vw
     left: 0
     width: 100vw
     height: 40vh
+    @media screen and (max-height: 400px)
+      left: 10vw
+      width: 80vw
+      top: -13vw
+    @media screen and (min-width: $mobile)
+      left: -3%
+      @media screen and (min-width: $tablet)
+        top: 0
+        left: 3%
+        height: 50vw
+        width: auto
+        transform: rotate(90deg)
     img
       width: 100%
       height: auto
+      @media screen and (min-width: $tablet)
+        width: auto
+        height: 100%
