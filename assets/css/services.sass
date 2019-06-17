@@ -10,6 +10,7 @@
       padding-bottom: 5rem
       position: relative
       margin-bottom: 15rem
+      z-index: 2
       .slick-list
         @media screen and (min-width: $tablet)
           width: 50vw
@@ -56,9 +57,28 @@
       font-size: 2.66rem
       color: #D4D4D4
       outline: none
+      position: relative
+      padding-bottom: 2rem
       @media screen and (min-width: $tablet)
         font-size: 1.8rem
         line-height: 2.4rem
+        width: 25%
+      &:hover
+        &:after
+          min-width: 90%
+          transition: min-width 500ms
+      &:after
+        position: absolute
+        bottom: 0
+        left: 0
+        display: block
+        width: 5px
+        min-width: 5px
+        height: 5px
+        background-color: $red
+        content: ""
+        transition: min-width 500ms
+
   .portfolio_wrapper_slider_img
     margin-bottom: 10rem
     @media screen and (min-width: $mobile)
@@ -66,6 +86,7 @@
       @media screen and (min-width: $tablet)
         margin-bottom: 0
         position: relative
+        z-index: 2
     .portfolio_slider_img
       position: relative
       @media screen and (min-width: $tablet)
@@ -254,9 +275,13 @@
     @media screen and (min-width: $tablet)
       margin-bottom: 0
       margin-top: 3rem
-      &:hover>&:after
-        @media screen and (min-width: $tablet)
-          height: 3.8rem
+      cursor: pointer
+
+      &:hover
+        &:after
+          @media screen and (min-width: $tablet)
+            max-height: 4.7rem
+            height: 4.7rem
     &:after
       content: ''
       width: 50%
@@ -266,11 +291,12 @@
       bottom: -1rem
       left: 0
       z-index: 1
-      transition: min-height 500ms
+      transition: max-height 500ms
       @media screen and (min-width: $mobile)
         width: 25%
         @media screen and (min-width: $tablet)
           height: 5px
+          max-height: 5px
           z-index: 1
 
     p
@@ -388,7 +414,20 @@
       justify-content: flex-start
       padding-left: 30vw
 
-
+.portfolio_bg
+  position: absolute
+  z-index: 1
+  transform: translate(-50%,-50%)
+  top: 70%
+  left: 50%
+  width: 60%
+  height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+  img
+    width: 100%
+    height: auto
 
 
 

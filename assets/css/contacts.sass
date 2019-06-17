@@ -2,6 +2,8 @@
   padding: 13.33rem 1rem 3rem
   @media screen and (min-width: $mobile)
     padding: 7rem 11.33rem 3rem
+    @media screen and (min-width: $mobile)
+      padding: 25vh 11.5rem 9rem
   .form_title
     font-size: 7.33rem
     line-height: 9rem
@@ -10,6 +12,9 @@
     @media screen and (min-width: $mobile)
       font-size: 10rem
       line-height: 13rem
+      @media screen and (min-width: $tablet)
+        font-size: 6rem
+        line-height: 7.2rem
 .form_connect
   display: flex
   flex-direction: column
@@ -25,6 +30,9 @@
     flex-direction: row
     justify-content: space-between
     align-items: flex-end
+    @media screen and (min-width: $tablet)
+      width: 45%
+      margin-bottom: 7rem
     label
       width: 25%
       font-weight: 400
@@ -33,6 +41,9 @@
       opacity: 0.5
       @media screen and (min-width: $mobile)
         width: 40%
+        @media screen and (min-width: $tablet)
+          font-size: 1.6rem
+          line-height: 2.4rem
     input
       width: 75%
       height: 100%
@@ -54,6 +65,10 @@
     flex-direction: row
     align-items: center
     margin-bottom: 8.33rem
+    @media screen and (min-width: $tablet)
+      width: 50%
+      align-items: flex-end
+      margin-bottom: 7rem
     .brief_label
       width: 35%
       font-weight: 400
@@ -61,6 +76,9 @@
       line-height: 4rem
       opacity: 0.5
       margin-right: 4rem
+      @media screen and (min-width: $tablet)
+        font-size: 1.6rem
+        line-height: 2.4rem
     .wrapper_add_brief
       position: relative
       display: flex
@@ -73,6 +91,9 @@
         width: 6rem
         height: 6rem
         background-color: $white
+        @media screen and (min-width: $tablet)
+          width: 3.5rem
+          height: 3.5rem
         &:before
           content: ''
           width: 60%
@@ -110,6 +131,9 @@
         left: 0
         z-index: 1
         transition: opacity 500ms 200ms
+        @media screen and (min-width: $tablet)
+          width: 3.5rem
+          height: 3.5rem
         img
           width: 100%
           height: auto
@@ -125,6 +149,9 @@
         position: absolute
         z-index: 1
         transition: opacity 700ms 200ms
+        @media screen and (min-width: $tablet)
+          width: 3.5rem
+          height: 3.5rem
         img
           width: 100%
           height: auto
@@ -143,6 +170,10 @@
     line-height: 6rem
     font-weight: 700
     margin-bottom: 5rem
+    @media screen and (min-width: $tablet)
+      font-size: 3rem
+      line-height: 4rem
+      margin-bottom: 3rem
   &_list
     display: flex
     flex-direction: column
@@ -158,10 +189,18 @@
         line-height: 5rem
         font-weight: 400
         margin-bottom: 3.33rem
+        @media screen and (min-width: $tablet)
+          font-size: 2.4rem
+          line-height: 3rem
+          margin-bottom: 2rem
       .contacts_item_text
         font-size: 3rem
         line-height: 4.5rem
         font-weight: 300
+        @media screen and (min-width: $tablet)
+          font-size: 1.8rem
+          line-height: 2.4rem
+
 
 
 .contacts_map
@@ -169,6 +208,9 @@
   height: 40vh
   @media screen and (min-width: $mobile)
     height: 50vh
+    @media screen and (min-width: $tablet)
+      height: 70vh
+      width: 100%
   iframe
     width: 100%
     height: 100%

@@ -455,7 +455,8 @@ section.section_main .main_wrapper_title {
 }
 @media screen and (min-width: 767px) and (min-width: 1025px) {
   section.section_main .main_wrapper_title {
-    padding: 28vh 20vw 0;
+    padding: 0;
+    padding-top: 25vh;
     height: 60vh;
   }
 }
@@ -803,6 +804,7 @@ section.section_main .main_advantages .main_advantage_title {
     padding-bottom: 5rem;
     position: relative;
     margin-bottom: 15rem;
+    z-index: 2;
   }
 }
 @media screen and (min-width: 767px) and (min-width: 1025px) {
@@ -871,12 +873,31 @@ section.section_main .main_advantages .main_advantage_title {
   font-size: 2.66rem;
   color: #D4D4D4;
   outline: none;
+  position: relative;
+  padding-bottom: 2rem;
 }
 @media screen and (min-width: 1025px) {
   .portfolio .clients_info_link {
     font-size: 1.8rem;
     line-height: 2.4rem;
+    width: 25%;
   }
+}
+.portfolio .clients_info_link:hover:after {
+  min-width: 90%;
+  transition: min-width 500ms;
+}
+.portfolio .clients_info_link:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 5px;
+  min-width: 5px;
+  height: 5px;
+  background-color: #F25554;
+  content: "";
+  transition: min-width 500ms;
 }
 .portfolio .portfolio_wrapper_slider_img {
   margin-bottom: 10rem;
@@ -890,6 +911,7 @@ section.section_main .main_advantages .main_advantage_title {
   .portfolio .portfolio_wrapper_slider_img {
     margin-bottom: 0;
     position: relative;
+    z-index: 2;
   }
 }
 .portfolio .portfolio_wrapper_slider_img .portfolio_slider_img {
@@ -1164,11 +1186,13 @@ section.section_main .main_advantages .main_advantage_title {
   .wrapper_services .advantages_btn {
     margin-bottom: 0;
     margin-top: 3rem;
+    cursor: pointer;
   }
 }
 @media screen and (min-width: 1025px) and (min-width: 1025px) {
-  .wrapper_services .advantages_btn:hover > .wrapper_services .advantages_btn:after {
-    height: 3.8rem;
+  .wrapper_services .advantages_btn:hover:after {
+    max-height: 4.7rem;
+    height: 4.7rem;
   }
 }
 .wrapper_services .advantages_btn:after {
@@ -1180,7 +1204,7 @@ section.section_main .main_advantages .main_advantage_title {
   bottom: -1rem;
   left: 0;
   z-index: 1;
-  transition: min-height 500ms;
+  transition: max-height 500ms;
 }
 @media screen and (min-width: 767px) {
   .wrapper_services .advantages_btn:after {
@@ -1190,6 +1214,7 @@ section.section_main .main_advantages .main_advantage_title {
 @media screen and (min-width: 767px) and (min-width: 1025px) {
   .wrapper_services .advantages_btn:after {
     height: 5px;
+    max-height: 5px;
     z-index: 1;
   }
 }
@@ -1349,9 +1374,28 @@ section.section_main .main_advantages .main_advantage_title {
   }
 }
 
+.portfolio_bg {
+  position: absolute;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  top: 70%;
+  left: 50%;
+  width: 60%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio_bg img {
+  width: 100%;
+  height: auto;
+}
+
 @media screen and (min-width: 1025px) {
   .wrapper_list_clients {
     margin-bottom: 5rem;
+    position: relative;
+    z-index: 2;
   }
 }
 .wrapper_list_clients .list_clients_title {
@@ -1382,7 +1426,7 @@ section.section_main .main_advantages .main_advantage_title {
 }
 @media screen and (min-width: 767px) and (min-width: 1025px) {
   .wrapper_list_clients .list_clients_item {
-    width: calc(34% - 5.5rem);
+    width: calc(33% - 5rem);
   }
 }
 @media screen and (min-width: 767px) {
@@ -1607,6 +1651,11 @@ section.section_main .main_advantages .main_advantage_title {
     padding: 7rem 11.33rem 3rem;
   }
 }
+@media screen and (min-width: 767px) and (min-width: 767px) {
+  .section_contacts {
+    padding: 25vh 11.5rem 9rem;
+  }
+}
 .section_contacts .form_title {
   font-size: 7.33rem;
   line-height: 9rem;
@@ -1617,6 +1666,12 @@ section.section_main .main_advantages .main_advantage_title {
   .section_contacts .form_title {
     font-size: 10rem;
     line-height: 13rem;
+  }
+}
+@media screen and (min-width: 767px) and (min-width: 1025px) {
+  .section_contacts .form_title {
+    font-size: 6rem;
+    line-height: 7.2rem;
   }
 }
 
@@ -1640,6 +1695,12 @@ section.section_main .main_advantages .main_advantage_title {
   justify-content: space-between;
   align-items: flex-end;
 }
+@media screen and (min-width: 1025px) {
+  .form_connect_input {
+    width: 45%;
+    margin-bottom: 7rem;
+  }
+}
 .form_connect_input label {
   width: 25%;
   font-weight: 400;
@@ -1650,6 +1711,12 @@ section.section_main .main_advantages .main_advantage_title {
 @media screen and (min-width: 767px) {
   .form_connect_input label {
     width: 40%;
+  }
+}
+@media screen and (min-width: 767px) and (min-width: 1025px) {
+  .form_connect_input label {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
   }
 }
 .form_connect_input input {
@@ -1677,6 +1744,13 @@ section.section_main .main_advantages .main_advantage_title {
   align-items: center;
   margin-bottom: 8.33rem;
 }
+@media screen and (min-width: 1025px) {
+  .form_connect .form_button_brief {
+    width: 50%;
+    align-items: flex-end;
+    margin-bottom: 7rem;
+  }
+}
 .form_connect .form_button_brief .brief_label {
   width: 35%;
   font-weight: 400;
@@ -1684,6 +1758,12 @@ section.section_main .main_advantages .main_advantage_title {
   line-height: 4rem;
   opacity: 0.5;
   margin-right: 4rem;
+}
+@media screen and (min-width: 1025px) {
+  .form_connect .form_button_brief .brief_label {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
 }
 .form_connect .form_button_brief .wrapper_add_brief {
   position: relative;
@@ -1698,6 +1778,12 @@ section.section_main .main_advantages .main_advantage_title {
   width: 6rem;
   height: 6rem;
   background-color: #fff;
+}
+@media screen and (min-width: 1025px) {
+  .form_connect .form_button_brief .wrapper_add_brief .add_brief {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
 }
 .form_connect .form_button_brief .wrapper_add_brief .add_brief:before {
   content: "";
@@ -1739,6 +1825,12 @@ section.section_main .main_advantages .main_advantage_title {
   z-index: 1;
   transition: opacity 500ms 200ms;
 }
+@media screen and (min-width: 1025px) {
+  .form_connect .form_button_brief .wrapper_add_brief .downloader_brief {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
 .form_connect .form_button_brief .wrapper_add_brief .downloader_brief img {
   width: 100%;
   height: auto;
@@ -1754,6 +1846,12 @@ section.section_main .main_advantages .main_advantage_title {
   position: absolute;
   z-index: 1;
   transition: opacity 700ms 200ms;
+}
+@media screen and (min-width: 1025px) {
+  .form_connect .form_button_brief .wrapper_add_brief .post_brief {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
 }
 .form_connect .form_button_brief .wrapper_add_brief .post_brief img {
   width: 100%;
@@ -1774,6 +1872,13 @@ section.section_main .main_advantages .main_advantage_title {
   line-height: 6rem;
   font-weight: 700;
   margin-bottom: 5rem;
+}
+@media screen and (min-width: 1025px) {
+  .contacts_info_title {
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-bottom: 3rem;
+  }
 }
 .contacts_info_list {
   display: flex;
@@ -1799,10 +1904,23 @@ section.section_main .main_advantages .main_advantage_title {
   font-weight: 400;
   margin-bottom: 3.33rem;
 }
+@media screen and (min-width: 1025px) {
+  .contacts_info_list_item .contacts_item_title {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+  }
+}
 .contacts_info_list_item .contacts_item_text {
   font-size: 3rem;
   line-height: 4.5rem;
   font-weight: 300;
+}
+@media screen and (min-width: 1025px) {
+  .contacts_info_list_item .contacts_item_text {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
 }
 
 .contacts_map {
@@ -1812,6 +1930,12 @@ section.section_main .main_advantages .main_advantage_title {
 @media screen and (min-width: 767px) {
   .contacts_map {
     height: 50vh;
+  }
+}
+@media screen and (min-width: 767px) and (min-width: 1025px) {
+  .contacts_map {
+    height: 70vh;
+    width: 100%;
   }
 }
 .contacts_map iframe {
@@ -1825,6 +1949,11 @@ section.section_main .main_advantages .main_advantage_title {
 @media screen and (min-width: 767px) {
   .footer {
     padding: 3.33rem 6rem;
+  }
+}
+@media screen and (min-width: 767px) and (min-width: 1025px) {
+  .footer {
+    padding: 3rem 0;
   }
 }
 .footer_logo {
@@ -1843,6 +1972,12 @@ section.section_main .main_advantages .main_advantage_title {
   height: 6rem;
   margin-right: 1rem;
 }
+@media screen and (min-width: 1025px) {
+  .footer_logo_icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
 .footer_logo_icon img {
   width: 100%;
   height: auto;
@@ -1853,11 +1988,23 @@ section.section_main .main_advantages .main_advantage_title {
   font-weight: 400;
   color: #302E32;
 }
+@media screen and (min-width: 1025px) {
+  .footer_logo_text {
+    font-size: 2rem;
+    line-height: 2.7rem;
+  }
+}
 .footer_create_company {
   font-size: 2.66rem;
   line-height: 4rem;
   font-weight: 200;
   color: #302E32;
+}
+@media screen and (min-width: 1025px) {
+  .footer_create_company {
+    font-size: 2rem;
+    line-height: 2.7rem;
+  }
 }
 
 .wrapper_pop_up {
@@ -1870,6 +2017,11 @@ section.section_main .main_advantages .main_advantage_title {
   height: 100%;
   background-color: #fff;
   transition: opacity 500ms 300ms;
+}
+@media screen and (min-width: 1025px) {
+  .wrapper_pop_up {
+    background-color: rgba(48, 46, 50, 0.7);
+  }
 }
 .wrapper_pop_up_open {
   z-index: 200;
@@ -1890,6 +2042,18 @@ section.section_main .main_advantages .main_advantage_title {
     padding: 22vh 13.33rem;
   }
 }
+@media screen and (min-width: 767px) and (min-width: 1025px) {
+  .wrapper_pop_up .pop_up_main {
+    width: 80%;
+    height: 90%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    padding: 5% 25%;
+  }
+}
 .wrapper_pop_up .pop_up_main .pop_up_title {
   position: relative;
   z-index: 202;
@@ -1905,6 +2069,13 @@ section.section_main .main_advantages .main_advantage_title {
     margin-bottom: 0;
   }
 }
+@media screen and (min-width: 1025px) {
+  .wrapper_pop_up .pop_up_main .pop_up_title {
+    margin-bottom: 7vh;
+    font-size: 4.4rem;
+    line-height: 5.4rem;
+  }
+}
 .wrapper_pop_up .pop_up_main .pop_up_title:after {
   content: "* Обов'язкове поле";
   font-family: "Lato", sans-serif;
@@ -1916,6 +2087,12 @@ section.section_main .main_advantages .main_advantage_title {
   font-weight: 400;
   color: #302E32;
   opacity: 0.5;
+}
+@media screen and (min-width: 1025px) {
+  .wrapper_pop_up .pop_up_main .pop_up_title:after {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
 }
 .wrapper_pop_up .pop_up_main .pop_up_form {
   margin-bottom: 3.33rem;
@@ -1932,16 +2109,38 @@ section.section_main .main_advantages .main_advantage_title {
     margin-bottom: 7rem;
   }
 }
+@media screen and (min-width: 767px) and (min-width: 1025px) {
+  .wrapper_pop_up .pop_up_main .pop_up_form {
+    flex-direction: column;
+    margin-bottom: 4rem;
+  }
+}
 .wrapper_pop_up .pop_up_main .pop_form_input {
   margin-bottom: 6vh;
+}
+@media screen and (min-width: 1025px) {
+  .wrapper_pop_up .pop_up_main .pop_form_input {
+    width: 100%;
+  }
 }
 .wrapper_pop_up .pop_up_main .pop_form_input label {
   color: #302E32;
   opacity: 0.5;
 }
+@media screen and (min-width: 1025px) {
+  .wrapper_pop_up .pop_up_main .pop_form_input label {
+    width: 25%;
+    margin-top: 0;
+  }
+}
 .wrapper_pop_up .pop_up_main .pop_form_input input {
   border-bottom: 2px solid #302E32;
   color: #302E32;
+}
+@media screen and (min-width: 1025px) {
+  .wrapper_pop_up .pop_up_main .pop_form_input input {
+    width: 75%;
+  }
 }
 .wrapper_pop_up .pop_up_main .pop_button_brief {
   margin-top: 5rem;
@@ -1964,6 +2163,11 @@ section.section_main .main_advantages .main_advantage_title {
 @media screen and (min-width: 767px) {
   .wrapper_pop_up .pop_up_main .pop_button_brief .brief_label {
     width: 60%;
+  }
+}
+@media screen and (min-width: 767px) and (min-width: 1025px) {
+  .wrapper_pop_up .pop_up_main .pop_button_brief .brief_label {
+    width: 25%;
   }
 }
 .wrapper_pop_up .pop_up_main .pop_button_brief .add_brief {
@@ -2018,6 +2222,12 @@ section.section_main .main_advantages .main_advantage_title {
   opacity: 0.5;
   color: #302E32;
 }
+@media screen and (min-width: 1025px) {
+  .wrapper_pop_up .pop_up_main .pop_up_btn_cancel p {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+}
 .wrapper_pop_up .pop_bg {
   z-index: 201;
   position: absolute;
@@ -2025,6 +2235,11 @@ section.section_main .main_advantages .main_advantage_title {
   left: 50%;
   width: calc(100% - 12rem);
   transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 1025px) {
+  .wrapper_pop_up .pop_bg {
+    width: 80%;
+  }
 }
 .wrapper_pop_up .pop_bg img {
   width: 100%;
@@ -2037,6 +2252,14 @@ section.section_main .main_advantages .main_advantage_title {
   position: absolute;
   top: 20px;
   right: 20px;
+}
+@media screen and (min-width: 1025px) {
+  .btn_close {
+    top: 6%;
+    right: 11%;
+    width: 5rem;
+    height: 5rem;
+  }
 }
 .btn_close:before {
   position: absolute;
