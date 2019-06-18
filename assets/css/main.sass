@@ -12,10 +12,11 @@ section.section_main
       padding: 0 11.66rem
       padding-top: 40rem
       @media screen and (min-width: $tablet)
-        //padding: 28vh 20vw 0
         padding: 0
-        padding-top: 25vh
+        padding-top: 20vh
         height: 60vh
+        @media screen and (min-width: 1700px)
+          padding-top: 25vh
     h3
       font-size: 4.33rem
       line-height: 5.66rem
@@ -27,8 +28,11 @@ section.section_main
         line-height: 10rem
         margin-bottom: 4rem
         @media screen and (min-width: $tablet)
-          font-size: 10rem
-          line-height: 12rem
+          font-size: 8rem
+          line-height: 9rem
+          @media screen and (min-width: 1700px)
+            font-size: 10rem
+            line-height: 12rem
 
       &:after
         content: ''
@@ -62,8 +66,11 @@ section.section_main
           font-size: 2.33rem
           line-height: 4rem
           @media screen and (min-width: $tablet)
-            font-size: 2rem
-            line-height: 2.7rem
+            font-size: 1.6rem
+            line-height: 2.2rem
+            @media screen and (min-width: 1700px)
+              font-size: 2rem
+              line-height: 2.7rem
         &:after
           position: absolute
           content: ''
@@ -120,8 +127,11 @@ section.section_main
         font-weight: 400
         margin-bottom: 1rem
         @media screen and (min-width: $tablet)
-          font-size: 6rem
-          line-height: 7.2rem
+          font-size: 4.4rem
+          line-height: 5.4rem
+          @media screen and (min-width: 1700px)
+            font-size: 6rem
+            line-height: 7.2rem
     &_text
       display: flex
       flex-direction: column
@@ -136,8 +146,11 @@ section.section_main
           font-size: 3.33rem
           line-height: 4.5rem
           @media screen and (min-width: $tablet)
-            font-size: 2rem
-            line-height: 2.7rem
+            font-size: 1.6rem
+            line-height: 2rem
+            @media screen and (min-width: 1700px)
+              font-size: 2rem
+              line-height: 2.7rem
         &:last-child
           margin-bottom: 0
 
@@ -205,7 +218,9 @@ section.section_main
           font-weight: 700
           z-index: 1
           @media screen and (min-width: $tablet)
-            font-size: 20rem
+            font-size: 12rem
+            @media screen and (min-width: 1700px)
+              font-size: 20rem
         &:after
           position: absolute
           background: $red
@@ -225,10 +240,12 @@ section.section_main
           z-index: 6
           padding-left: 20%
           @media screen and (min-width: $tablet)
-            font-size: 3rem
-            line-height: 4rem
+            font-size: 2rem
+            line-height: 2.5rem
             font-weight: 400
-
+            @media screen and (min-width: 1700px)
+              font-size: 3rem
+              line-height: 4rem
 
 
 

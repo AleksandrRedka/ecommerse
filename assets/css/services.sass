@@ -37,8 +37,12 @@
         font-size: 16.66rem
         line-height: 16.66rem
         @media screen and (min-width: $tablet)
-          font-size: 19.5rem
-          line-height: 20rem
+          font-size: 15rem
+          line-height: 17rem
+          @media screen and (min-width: 1700px)
+            font-size: 19.5rem
+            line-height: 20rem
+
     &_text
       overflow: hidden
       max-height: 16rem
@@ -47,10 +51,15 @@
       font-weight: 400
       margin-bottom: 3.33rem
       @media screen and (min-width: $tablet)
-        font-size: 1.8rem
+        font-size: 1.6rem
         line-height: 2.4rem
         max-height: 12rem
-        width: 70%
+        width: 65%
+        @media screen and (min-width: 1700px)
+          font-size: 1.8rem
+          line-height: 2.4rem
+          width: 70%
+
     &_link
       font-weight: 400
       line-height: 4rem
@@ -91,7 +100,9 @@
       position: relative
       @media screen and (min-width: $tablet)
         left: 0
-        top: 30vh
+        top: 40vh
+        @media screen and (min-width: 1700px)
+          top: 30vh
       .slick-list
         z-index: 1
         border-radius: 10px
@@ -112,7 +123,7 @@
         left: 50%
       @media screen and (min-width: $mobile)
         width: 15vw
-        @media screen and (min-width: 1024px)
+        @media screen and (min-width: $tablet)
           width: 12vw
           top: -8vw
       img
@@ -150,7 +161,9 @@
       @media screen and (min-width: $mobile)
         height: 30vh
         @media screen and (min-width: $tablet)
-          height: 45vh
+          height: 50vh
+          @media screen and (min-width: 1700px)
+            height: 45vh
       img
         position: relative
         z-index: 1
@@ -172,8 +185,11 @@
           font-size: 12rem
           line-height: 13rem
           @media screen and (min-width: $tablet)
-            font-size: 10rem
-            line-height: 12rem
+            font-size: 8rem
+            line-height: 10rem
+            @media screen and (min-width: 1700px)
+              font-size: 10rem
+              line-height: 12rem
         &_open
           opacity: 1
 
@@ -203,8 +219,11 @@
     @media screen and (min-width: $mobile)
       margin-bottom: 5rem
       @media screen and (min-width: $tablet)
-        font-size: 4.4rem
-        line-height: 5rem
+        font-size: 3rem
+        line-height: 4rem
+        @media screen and (min-width: 1700px)
+          font-size: 4.4rem
+          line-height: 5rem
   .advantages_list
     position: relative
     z-index: 2
@@ -222,8 +241,10 @@
       margin-bottom: 3.33rem
       transition: max-height 500ms
       @media screen and (min-width: $tablet)
-        max-height: 4rem
+        max-height: 5rem
         margin-bottom: 2rem
+        @media screen and (min-width: 1700px)
+          max-height: 4rem
       &:hover
         max-height: 20rem
         .advantage_icon
@@ -276,7 +297,7 @@
       margin-bottom: 0
       margin-top: 3rem
       cursor: pointer
-
+      width: 25%
       &:hover
         &:after
           @media screen and (min-width: $tablet)
@@ -298,6 +319,7 @@
           height: 5px
           max-height: 5px
           z-index: 1
+          width: 100%
 
     p
       position: relative
@@ -338,8 +360,11 @@
         margin-bottom: 3.33rem
         position: relative
         @media screen and (min-width: $tablet)
-          padding: 4rem
+          padding: 3rem 2rem
           height: 20vh
+          @media screen and (min-width: 1700px)
+            padding: 4rem
+
         &:after
           content: ''
           position: absolute
@@ -353,10 +378,6 @@
           &:after
             right: auto
             left: 0
-
-
-
-
       &:hover
         background: #2E2D30
         background: -moz-linear-gradient(left, #2E2D30 0%, #FF9E7A 100%)
@@ -379,8 +400,12 @@
         line-height: 3rem
         font-weight: 400
         @media screen and (min-width: $tablet)
-          font-size: 1.8rem
-          line-height: 2.7rem
+          font-size: 1.6rem
+          line-height: 2rem
+          @media screen and (min-width: 1700px)
+            font-size: 1.8rem
+            line-height: 2.7rem
+
         &:after
           transition: background-color 500ms
           content: ""

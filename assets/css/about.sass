@@ -5,7 +5,7 @@
   padding-top: 13rem
   @media screen and (min-width: $mobile)
     padding: 0 11.33rem
-    @media screen and (min-width: $mobile)
+    @media screen and (min-width: $tablet)
       height: 100vh
   .about_title
     position: relative
@@ -19,9 +19,13 @@
       font-size: 16.66rem
       line-height: 20rem
       @media screen and (min-width: $tablet)
-        font-size: 19.5rem
-        line-height: 20rem
-        padding-top: 16rem
+        font-size: 13rem
+        line-height: 15rem
+        padding-top: 12rem
+        @media screen and (min-width: 1700px)
+          font-size: 19.5rem
+          line-height: 20rem
+          padding-top: 16rem
   .about_text
     margin-bottom: 3rem
     p
@@ -50,13 +54,20 @@
       left: -5%
       @media screen and (min-width: $tablet)
         transform: rotate(90deg)
-        left: -22vw
-        height: auto
-        bottom: 4.5vw
-        width: 75vw
+        left: -33vh
+        height: 80vh
+        bottom: auto
+        top: 1vh
+        width: auto
+        @media screen and (min-width: 1700px)
+          left: -42vh
+          height: 100vh
     img
       width: 100%
       height: auto
+      @media screen and (min-width: $tablet)
+        height: 100%
+        width: auto
 
 .about_technology
   position: relative
@@ -70,10 +81,13 @@
   justify-content: space-between
   @media screen and (min-width: $mobile)
     padding: 13.33rem
-    @media screen and (min-width: $mobile)
-      padding: 22rem  13rem
+    @media screen and (min-width: $tablet)
+      padding: 9rem
+      height: 100vh
       min-height: 100vh
       width: auto
+      @media screen and (min-width: 1700px)
+        padding: 22rem  13rem
   p
     font-size: 7.33rem
     line-height: 9rem
@@ -85,8 +99,11 @@
       font-size: 15rem
       line-height: 18rem
       @media screen and (min-width: $tablet)
-        font-size: 10rem
-        line-height: 12rem
+        font-size: 7rem
+        line-height: 8rem
+        @media screen and (min-width: 1700px)
+          font-size: 10rem
+          line-height: 12rem
   .about_technology_bg
     z-index: 1
     position: absolute
@@ -101,11 +118,15 @@
     @media screen and (min-width: $mobile)
       left: -3%
       @media screen and (min-width: $tablet)
-        top: 0
-        left: 3%
-        height: 50vw
+        top: 1vh
+        left: auto
+        right: -35vh
+        height: 80vh
         width: auto
         transform: rotate(90deg)
+        @media screen and (min-width: 1700px)
+          right: -44vh
+          height: 100vh
     img
       width: 100%
       height: auto

@@ -79,12 +79,16 @@
       @media screen and (min-width: $tablet)
         font-size: 1.6rem
         line-height: 2.4rem
+        width: 50%
+        margin-right: 0
     .wrapper_add_brief
       position: relative
       display: flex
       flex-direction: row
       width: 60%
       justify-content: space-between
+      @media screen and (min-width: $tablet)
+        width: 50%
       .add_brief
         z-index: 2
         position: relative
@@ -94,6 +98,7 @@
         @media screen and (min-width: $tablet)
           width: 3.5rem
           height: 3.5rem
+
         &:before
           content: ''
           width: 60%
