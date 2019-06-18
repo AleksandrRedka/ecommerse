@@ -42,7 +42,7 @@
     <splitter split-orientation="horizontal" split-proportion="0.5438749">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="244">
@@ -103,11 +103,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assets/css/services.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="385">
-                  <caret line="43" column="30" lean-forward="true" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+                <state relative-caret-position="44">
+                  <caret line="184" column="26" lean-forward="true" selection-start-line="184" selection-start-column="26" selection-end-line="184" selection-end-column="26" />
                 </state>
               </provider>
             </entry>
@@ -237,11 +237,11 @@
         <option value="$PROJECT_DIR$/assets/css/pop_up.sass" />
         <option value="$PROJECT_DIR$/assets/css/main.sass" />
         <option value="$PROJECT_DIR$/assets/css/list_clients.sass" />
-        <option value="$PROJECT_DIR$/assets/css/services.sass" />
         <option value="$PROJECT_DIR$/assets/css/about.sass" />
         <option value="$PROJECT_DIR$/assets/css/contacts.sass" />
         <option value="$PROJECT_DIR$/assets/css/header.sass" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/css/services.sass" />
       </list>
     </option>
   </component>
@@ -320,18 +320,17 @@
       <workItem from="1560160957788" duration="24342000" />
       <workItem from="1560335650620" duration="49505000" />
       <workItem from="1560765742359" duration="5922000" />
-      <workItem from="1560837012932" duration="6755000" />
+      <workItem from="1560837012932" duration="7218000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86524000" />
+    <option name="totallyTimeSpent" value="86987000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="23" width="1440" height="820" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17811158" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17811158" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -344,7 +343,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.5126405" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.5126405" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -483,13 +482,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/services.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="43" column="30" lean-forward="true" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/about.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-402">
@@ -522,6 +514,13 @@
             <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/services.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="184" column="26" lean-forward="true" selection-start-line="184" selection-start-column="26" selection-end-line="184" selection-end-column="26" />
         </state>
       </provider>
     </entry>

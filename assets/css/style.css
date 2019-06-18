@@ -270,6 +270,11 @@ header {
     margin-bottom: 0;
   }
 }
+@media screen and (min-width: 767px) and (min-width: 1025px) and (min-width: 1700px) {
+  .wrapper_nav .navigation .switch_lang {
+    top: 3vh;
+  }
+}
 .wrapper_nav .navigation .switch_lang .lang {
   font-weight: 200;
   font-size: 2.66rem;
@@ -1564,13 +1569,14 @@ section.section_main .main_advantages .main_advantage_title {
 }
 @media screen and (min-width: 767px) and (min-width: 1025px) {
   .wrapper_list_clients .list_clients_item {
-    width: calc(33% - 5rem);
+    width: calc(33% - 4rem);
     margin-bottom: 10rem;
   }
 }
 @media screen and (min-width: 767px) and (min-width: 1025px) and (min-width: 1700px) {
   .wrapper_list_clients .list_clients_item {
     height: 25vh;
+    width: calc(33% - 5rem);
   }
 }
 @media screen and (min-width: 767px) {
