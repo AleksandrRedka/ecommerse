@@ -43,9 +43,11 @@
       @media screen and (max-height: 400px)
         margin-bottom: 0
       @media screen and (min-width: $tablet)
-        margin-bottom: 7vh
+        margin-bottom: 2vh
         font-size: 4.4rem
         line-height: 5.4rem
+        @media screen and (min-width: 1700px)
+          margin-bottom: 7vh
       &:after
         content: "* Обов'язкове поле"
         font-family: "Lato", sans-serif
@@ -71,10 +73,14 @@
         @media screen and (min-width: $tablet)
           flex-direction: column
           margin-bottom: 4rem
+
     .pop_form_input
       margin-bottom: 6vh
       @media screen and (min-width: $tablet)
         width: 100%
+        margin-bottom: 3vh
+        @media screen and (min-width: 1700px)
+          margin-bottom: 6vh
       label
         color: $black
         opacity: 0.5
@@ -93,6 +99,12 @@
         margin-bottom: 2rem
       @media screen and (min-width: $mobile)
         width: 100%
+        @media screen and (min-width: $tablet)
+          margin-top: 0
+          margin-bottom: 4rem
+          @media screen and (min-width: 1700px)
+            margin-top: 5rem
+            margin-bottom: 7rem
       .brief_label
         color: $black
         opacity: 0.5

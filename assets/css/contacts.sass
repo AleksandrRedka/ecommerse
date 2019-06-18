@@ -2,8 +2,8 @@
   padding: 13.33rem 1rem 3rem
   @media screen and (min-width: $mobile)
     padding: 7rem 11.33rem 3rem
-    @media screen and (min-width: $mobile)
-      padding: 25vh 11.5rem 9rem
+    @media screen and (min-width: $tablet)
+      padding: 33vh 11.5rem 9rem
   .form_title
     font-size: 7.33rem
     line-height: 9rem
@@ -18,7 +18,7 @@
 .form_connect
   display: flex
   flex-direction: column
-  margin-bottom: 8.33rem
+  margin-bottom: 10rem
   @media screen and (min-width: $mobile)
     flex-direction: row
     flex-wrap: wrap
@@ -66,7 +66,7 @@
     align-items: center
     margin-bottom: 8.33rem
     @media screen and (min-width: $tablet)
-      width: 50%
+      width: 45%
       align-items: flex-end
       margin-bottom: 7rem
     .brief_label
@@ -90,6 +90,7 @@
       @media screen and (min-width: $tablet)
         width: 50%
       .add_brief
+        cursor: pointer
         z-index: 2
         position: relative
         width: 6rem
@@ -165,7 +166,9 @@
         position: static
         opacity: 1
         transition: opacity 500ms
-
+  .form_btn
+    @media screen and (min-width: $tablet)
+      margin-left: calc(100%  - 17vw)
 
 .contacts_info
   display: flex
