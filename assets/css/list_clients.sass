@@ -13,13 +13,19 @@
     flex-direction: row
     justify-content: space-between
     flex-wrap: wrap
+    @media screen and (min-width: $mobile)
+      margin-bottom: 10rem
     &_item
+      position: relative
       display: flex
       flex-direction: column
-      justify-content: space-between
+      align-items: center
+      justify-content: center
       width: calc(50% - 2.5rem)
       height: 20vh
       margin-bottom: 3.33rem
+      @media screen and (max-height: 400px)
+        height: 45vh
       @media screen and (min-width: $mobile)
         width: calc(33% - 8rem)
         height: 15vh
@@ -28,27 +34,21 @@
           width: calc(33% - 4rem)
           margin-bottom: 10rem
           @media screen and (min-width: 1700px)
-            height: 25vh
+            height: 7vh
             width: calc(33% - 5rem)
 
         &:nth-child(n + 3)
           margin-bottom: 0
       .client_logo
-        display: flex
-        justify-content: center
-        align-items: center
-        width: 100%
-        height: 70%
-        @media screen and (min-width: $mobile)
-          height: 50%
         img
           width: 100%
           height: auto
-          @media screen and (max-height: 400px)
-            width: auto
-            height: 100%
       .client_title
-        height: 20%
+        position: absolute
+        width: 100%
+        bottom: -25%
+        left: 50%
+        transform: translate(-50%,-50%)
         text-align: center
         font-weight: 300
         font-size: 2.66rem
@@ -56,10 +56,10 @@
         @media screen and (min-width: $mobile)
           font-size: 4rem
           line-height: 3rem
-          height: 30%
           @media screen and (min-width: $tablet)
             font-size: 2.4rem
             line-height: 2.7rem
+            bottom: -100%
 
 
 

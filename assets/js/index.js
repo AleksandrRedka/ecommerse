@@ -81,6 +81,17 @@ $(document).ready(
                 asNavFor: '.portfolio_slider_img',
                 arrows: false,
             });
+            $('.portfolio_slider_title').slick({
+                asNavFor: '.portfolio_slider_img',
+                vertical: true,
+                dots: false,
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows: false,
+                centerMode:true,
+                centerPadding: '45px',
+            });
             $('.portfolio_slider_img').slick({
                 swipe: false,
                 vertical: true,
@@ -88,11 +99,10 @@ $(document).ready(
                 infinite: true,
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                asNavFor: '.portfolio_slider_text',
+                asNavFor: '.portfolio_slider_text,.portfolio_slider_title',
                 arrows: true,
                 prevArrow: '<button class="slick-review slick-prev portfolio-slider-prev"><img src="assets/img/svg/Path%20127.svg" alt=""></button>',
                 nextArrow: '<button class="slick-review slick-next portfolio-slider-next"><img src="assets/img/svg/Path%20126.svg" alt=""></button>',
-
             });
         })();
         (function () {
@@ -130,5 +140,26 @@ $(document).ready(
                 }
             });
         })();
+        (function () {
+            $('.pop-up-client-js').click(function () {
+                $('body').addClass('body_hidden');
+                let titleCompany = $(this).text();
+                let linkCompany=$('.slick-active').find('a.clients_info_link').attr('href');
+                // let aboutCompany =$('.slick-active').find('div.clients_info_text').text();
+
+
+                $('.pop_up_portfolio_title').text(titleCompany);
+                $('.client_url').attr('href', linkCompany);
+                // $('.pop_up_portfolio_text').text(aboutCompany);
+
+                $('.wrapper_pop_up_portfolio').addClass('wrapper_pop_up_portfolio_open');
+
+            });
+            $('.close-pop-portfolio-js').click(function () {
+                $('body').removeClass('body_hidden');
+                $('.wrapper_pop_up_portfolio').removeClass('wrapper_pop_up_portfolio_open');
+            })
+        })();
+
     })()
 );

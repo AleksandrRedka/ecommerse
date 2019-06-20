@@ -20,6 +20,7 @@ header
     @media screen and (min-width: $tablet)
       width: 5vw
       height: 5vw
+      left: 4vw
   &:after
     content: ""
     width: 150%
@@ -241,12 +242,25 @@ header
             position: absolute
             opacity: 0
             transition: opacity 500ms 400ms
-      &_open
+      &_active
         @media screen and (min-width: $tablet)
-          span
-            right: -100%
+          min-width: 6vw
+          max-width: 6vw
+          margin-left: 8vw
+          overflow: visible
+          min-height: 0.5rem
+          p
+            color: $white
+            opacity: 1
+            transform: translate(-50%,-50%)
             top: 50%
-            width: 100%
+            left: -30%
+            height: 3rem
+          &:hover
+            min-height: 0.5rem
+            min-width: 6vw
+            max-width: 6vw
+            margin-left: 8vw
       &:after
         content: ''
         bottom: 2px

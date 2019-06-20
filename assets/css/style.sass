@@ -13,11 +13,13 @@ $white: #fff
 $black: #302E32
 /////------------------------------------------------
 body,html, *
-  font-size: 10px
+  font-size: 8px
   color: #fff
   font-family: 'Lato', sans-serif
   @media screen and (min-width: 2000px)
     font-size: 12px
+  @media screen and (min-width: 1700px)
+    font-size: 10px
   @media screen and (max-width: 1024px)
     font-size: 6px
   @media screen and (max-width: 340px)
@@ -72,6 +74,9 @@ button
   section
     background-color: #302E32
     flex-grow: 1
+    @media screen and (min-width: $tablet)
+      height: 100vh
+      overflow: hidden
 
 @import "header"
 @import "main"
