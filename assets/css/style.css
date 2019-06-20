@@ -2710,7 +2710,7 @@ section.section_main .main_advantages .main_advantage_title {
     z-index: 199;
   }
 }
-@media screen and (min-width: 1025px) and (min-width: 1025px) {
+@media screen and (min-width: 1025px) and (min-width: 1700px) {
   .wrapper_pop_up_portfolio .pop_up_portfolio_title {
     top: 8%;
     height: 12%;
