@@ -244,26 +244,7 @@ header
             position: absolute
             opacity: 0
             transition: opacity 500ms 400ms
-      &_active
-        @media screen and (min-width: $tablet)
-          min-width: 6vw
-          max-width: 6vw
-          margin-left: 8vw
-          overflow: visible
-          min-height: 0.5rem
-          p
-            color: $white
-            opacity: 1
-            transform: translate(-50%,-50%)
-            top: 50%
-            left: -30%
-            height: 3rem
-            font-weight: 200
-          &:hover
-            min-height: 0.5rem
-            min-width: 6vw
-            max-width: 6vw
-            margin-left: 8vw
+
       &:after
         content: ''
         bottom: 2px
@@ -274,6 +255,29 @@ header
         height: 2px
         @media screen and (min-width: $tablet)
           display: none
+    .active
+      @media screen and (min-width: $tablet)
+        min-width: 6vw
+        max-width: 6vw
+        margin-left: 8vw
+        overflow: visible
+        min-height: 0.5rem
+        p
+          width: 100%
+          text-align: right
+          color: $white
+          opacity: 1
+          transform: translate(-50%,-50%)
+          top: 50%
+          left: -55%
+          height: 3rem
+          font-weight: 200
+          text-shadow: 0px 0px 6px #000000
+        &:hover
+          min-height: 0.5rem
+          min-width: 6vw
+          max-width: 6vw
+          margin-left: 8vw
     &_bg
       position: absolute
       bottom: -30%

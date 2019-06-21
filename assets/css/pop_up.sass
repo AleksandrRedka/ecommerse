@@ -22,7 +22,9 @@
     @media screen and (min-width: $mobile)
       padding: 22vh 13.33rem
       @media screen and (min-width: $tablet)
-
+        display: flex
+        flex-direction: column
+        justify-content: space-evenly
         width: 80%
         height: 90%
         transform: translate(-50%,-50%)
@@ -134,6 +136,7 @@
         button
           width: 45%
     .pop_up_btn_cancel
+      cursor: pointer
       position: relative
       z-index: 205
       background: $white
@@ -164,6 +167,7 @@
       width: 100%
       height: auto
 .btn_close
+  cursor: pointer
   width: 8rem
   height: 8rem
   position: absolute
@@ -318,6 +322,7 @@
 
 
 .pop_up_portfolio_close
+  cursor: pointer
   width: 8rem
   height: 8rem
   position: absolute

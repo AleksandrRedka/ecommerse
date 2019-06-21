@@ -57,12 +57,14 @@ $(document).ready(
             } )
         })();
         (function () {
-            $('.menu-js').click(function () {
-                $('body').toggleClass('body_hidden');
-                $(this).toggleClass('wrapper_burger_open');
-                $('.wrapper_nav').toggleClass('wrapper_nav_open');
-                $('.navigation_menu_bg').toggleClass('navigation_menu_bg_open');
-            })
+            if ($(window).width() <= '1024') {
+                $('.menu-js').click(function () {
+                    $('body').toggleClass('body_hidden');
+                    $(this).toggleClass('wrapper_burger_open');
+                    $('.wrapper_nav').toggleClass('wrapper_nav_open');
+                    $('.navigation_menu_bg').toggleClass('navigation_menu_bg_open');
+                })
+            }
         })();
         (function () {
             $('.brief-js').click(function () {
@@ -91,24 +93,48 @@ $(document).ready(
                 slidesToScroll: 1,
                 arrows: false,
                 centerMode:true,
-                centerPadding: '25%',
+                centerPadding: '33%',
                 responsive: [
+                    {
+                        breakpoint: 350,
+                        settings: {
+                            centerPadding: '32%',
+                        }
+                    },
+                    {
+                        breakpoint: 400,
+                        settings: {
+                            centerPadding: '33%',
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            centerPadding: '27%',
+                        }
+                    },
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            centerPadding: '28%',
+                        }
+                    },
                     {
                         breakpoint: 1250,
                         settings: {
-                            centerPadding: '35%',
+                            centerPadding: '38%',
                         }
                     },
                     {
                         breakpoint: 1300,
                         settings: {
-                            centerPadding: '24%',
+                            centerPadding: '26%',
                         }
                     },
                     {
                         breakpoint: 1400,
                         settings: {
-                            centerPadding: '35%',
+                            centerPadding: '38%',
                         }
                     },
                     {
@@ -189,12 +215,15 @@ $(document).ready(
             })
         })();
         (function () {
-            $('#fullpage').fullpage({
-                scrollOverflow:true,
-                anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
-                menu: ".navigation_menu"
-            });
-
+            if ($(window).width() >= '768') {
+                const myFullpage = new fullpage('#fullpage', {
+                    scrollOverflow: true,
+                    scrollingSpeed: 800,
+                    menu: ".navigation_menu",
+                    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+                    licenseKey: '7474674747',
+                });
+            }
         })();
     })()
 );

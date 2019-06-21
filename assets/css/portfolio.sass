@@ -3,7 +3,7 @@
   padding-top: 13.33rem
   position: relative
   @media screen and (min-width: $mobile)
-    padding: 0 11.33rem
+    padding: 0 17rem
   .portfolio_wrapper_slider_text
     margin-bottom: 10rem
     position: relative
@@ -42,7 +42,7 @@
         font-size: 16.66rem
         line-height: 16.66rem
         @media screen and (min-width: $tablet)
-          margin-top: 15%
+          //margin-top: 15%
           font-size: 10rem
           line-height: 10rem
           margin-bottom: 3vh
@@ -166,7 +166,7 @@
       display: block
       position: relative
       width: 100%
-      height: 25vh
+      height: 50vw
       @media screen and (max-height: 400px )
         height: 50vh
       @media screen and (min-width: $mobile)
@@ -216,6 +216,8 @@
   top: 50%
   left: 50%
   z-index: 3
+  @media screen and (min-width: 1366px) and (height: 768px)
+    top: 60%
   .slick-list
     max-height: calc(100% + 23%)
     position: absolute
@@ -227,20 +229,25 @@
       color: $black
       text-shadow: 0 -2px $white, 2px 0 $white, 0 2px $white, -2px 1px $white
   .slider_title_item
-    height: 8vh
+    height: 18vw
     @media screen and (min-width: 350px)
-      height: 8.5vh
+      height: 20.2vw
     @media screen and (min-width: 400px)
       height: 9.5vh
       @media screen and (min-width: $mobile)
-        height: 10.5vh
+        height: 11vh
         @media screen and (min-width: 1024px)
-          //height: 17vh
-          height: 135px
-          //@media screen and (min-width: 1366px) and (min-height: 768px)
-          //  height: 18vh
-          @media screen and (min-width: 1700px)
-            height: 20vh
+          height: 12vh
+          @media screen and (min-width: 1200px)
+            height: 135px
+            @media screen and (min-width: 1366px)
+              height: 135px
+            @media screen and (min-width: 1366px) and (height: 768px)
+              height:  18vh
+            @media screen and (min-width: 1400px)
+              height: 15.2vh
+              @media screen and (min-width: 1700px)
+                height: 20vh
 
 .client_site
   display: block
