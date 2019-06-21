@@ -11,8 +11,10 @@
     @media screen and (min-width: $mobile)
       padding-bottom: 5rem
       margin-bottom: 8vh
-      @media screen and (min-width: 1700px)
-        margin-bottom: 0
+      @media screen and (min-width: $tablet)
+        margin-bottom: 2vh
+        @media screen and (min-width: 1700px)
+          margin-bottom: 0
       .slick-list
         @media screen and (min-width: $tablet)
           width: 50vw
@@ -40,13 +42,13 @@
         font-size: 16.66rem
         line-height: 16.66rem
         @media screen and (min-width: $tablet)
-          font-size: 15rem
-          line-height: 14rem
-          min-height: 28rem
+          margin-top: 15%
+          font-size: 10rem
+          line-height: 10rem
           margin-bottom: 3vh
           @media screen and (min-width: 1700px)
-            font-size: 19.5rem
-            line-height: 16rem
+            font-size: 12rem
+            line-height: 12rem
 
     &_text
       overflow: hidden
@@ -128,8 +130,10 @@
       @media screen and (min-width: $mobile)
         width: 15vw
         @media screen and (min-width: $tablet)
-          width: 12vw
-          top: -8vw
+          transform: translate(-50%,-50%)
+          left: 50%
+          width: 6vw
+          top: -4vw
       img
         width: 100%
         height: auto
@@ -149,9 +153,12 @@
         left: 50%
       @media screen and (min-width: $mobile)
         width: 15vw
-        @media screen and (min-width: 1024px)
-          width: 12vw
-          bottom: -8vw
+        @media screen and (min-width: $tablet)
+          transform: translate(-50%,-50%)
+          left: 50%
+          width: 6vw
+          bottom: -7vw
+
       img
         width: 100%
         height: auto
@@ -165,14 +172,17 @@
       @media screen and (min-width: $mobile)
         height: 30vh
         @media screen and (min-width: $tablet)
-          height: 50vh
+          height: 45vh
           @media screen and (min-width: 1700px)
             height: 45vh
       img
         position: relative
         z-index: 1
         width: 100%
-        height: auto
+        height: 100%
+        transform: translate(-50%,-50%)
+        top: 50%
+        left: 50%
         &_open
           opacity: 1
 
@@ -191,7 +201,7 @@
     width: 100%
     top: 35%
     @media screen and (min-width: $tablet)
-      top: 40%
+      top: 50%
       width: 50%
       height: 100vh
   img
@@ -201,11 +211,17 @@
 .portfolio_slider_title
   position: absolute
   width: 100%
-  height: 140%
+  height: 100%
   transform: translate(-50%,-50%)
   top: 50%
   left: 50%
   z-index: 3
+  .slick-list
+    max-height: calc(100% + 23%)
+    position: absolute
+    top: 50%
+    transform: translate(-50%,-50%)
+    left: 50%
   .slick-center
     .client_site
       color: $black
@@ -219,14 +235,17 @@
       @media screen and (min-width: $mobile)
         height: 10.5vh
         @media screen and (min-width: 1024px)
-          height: 12.6vh
-          @media screen and (min-width: $tablet)
+          //height: 17vh
+          height: 135px
+          //@media screen and (min-width: 1366px) and (min-height: 768px)
+          //  height: 18vh
+          @media screen and (min-width: 1700px)
             height: 20vh
 
 .client_site
   display: block
   height: 40%
-  color: transparent
+  color: $white
   -webkit-text-stroke: 2px $black
   text-align: center
   z-index: 2

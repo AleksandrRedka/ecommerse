@@ -95,6 +95,8 @@ button {
 .wrapper_main {
   display: flex;
   flex-direction: column;
+  width: 100vw;
+  overflow: hidden;
 }
 .wrapper_main section {
   background-color: #302E32;
@@ -401,12 +403,14 @@ header {
     transition: all 500ms;
     max-width: 4vw;
     margin-left: 10vw;
+    border-radius: 5px;
   }
   .wrapper_nav .navigation_menu .navigation_item:hover {
     min-height: 3rem;
     min-width: 12vw;
     max-width: 12vw;
     margin-left: 2vw;
+    border-radius: 0;
   }
 }
 @media screen and (min-width: 767px) and (min-width: 1025px) and (min-width: 1700px) {
@@ -463,6 +467,7 @@ header {
     top: 50%;
     left: -30%;
     height: 3rem;
+    font-weight: 200;
   }
   .wrapper_nav .navigation_menu .navigation_item_active:hover {
     min-height: 0.5rem;
@@ -1172,7 +1177,7 @@ section.section_main .main_advantages .main_advantage_title {
 }
 @media screen and (min-width: 767px) and (min-width: 1025px) and (min-width: 1700px) {
   .wrapper_services .services_list .service {
-    padding: 4rem;
+    padding: 4rem 2rem;
   }
 }
 @media screen and (min-width: 767px) {
@@ -1302,7 +1307,12 @@ section.section_main .main_advantages .main_advantage_title {
     margin-bottom: 8vh;
   }
 }
-@media screen and (min-width: 767px) and (min-width: 1700px) {
+@media screen and (min-width: 767px) and (min-width: 1025px) {
+  .portfolio .portfolio_wrapper_slider_text {
+    margin-bottom: 2vh;
+  }
+}
+@media screen and (min-width: 767px) and (min-width: 1025px) and (min-width: 1700px) {
   .portfolio .portfolio_wrapper_slider_text {
     margin-bottom: 0;
   }
@@ -1347,16 +1357,16 @@ section.section_main .main_advantages .main_advantage_title {
 }
 @media screen and (min-width: 767px) and (min-width: 1025px) {
   .portfolio .clients_info_name {
-    font-size: 15rem;
-    line-height: 14rem;
-    min-height: 28rem;
+    margin-top: 15%;
+    font-size: 10rem;
+    line-height: 10rem;
     margin-bottom: 3vh;
   }
 }
 @media screen and (min-width: 767px) and (min-width: 1025px) and (min-width: 1700px) {
   .portfolio .clients_info_name {
-    font-size: 19.5rem;
-    line-height: 16rem;
+    font-size: 12rem;
+    line-height: 12rem;
   }
 }
 .portfolio .clients_info_text {
@@ -1467,8 +1477,10 @@ section.section_main .main_advantages .main_advantage_title {
 }
 @media screen and (min-width: 767px) and (min-width: 1025px) {
   .portfolio .portfolio_wrapper_slider_img .portfolio-slider-prev {
-    width: 12vw;
-    top: -8vw;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 6vw;
+    top: -4vw;
   }
 }
 .portfolio .portfolio_wrapper_slider_img .portfolio-slider-prev img {
@@ -1498,10 +1510,12 @@ section.section_main .main_advantages .main_advantage_title {
     width: 15vw;
   }
 }
-@media screen and (min-width: 767px) and (min-width: 1024px) {
+@media screen and (min-width: 767px) and (min-width: 1025px) {
   .portfolio .portfolio_wrapper_slider_img .portfolio-slider-next {
-    width: 12vw;
-    bottom: -8vw;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 6vw;
+    bottom: -7vw;
   }
 }
 .portfolio .portfolio_wrapper_slider_img .portfolio-slider-next img {
@@ -1526,7 +1540,7 @@ section.section_main .main_advantages .main_advantage_title {
 }
 @media screen and (min-width: 767px) and (min-width: 1025px) {
   .portfolio .portfolio_wrapper_slider_img .client_img {
-    height: 50vh;
+    height: 45vh;
   }
 }
 @media screen and (min-width: 767px) and (min-width: 1025px) and (min-width: 1700px) {
@@ -1538,7 +1552,10 @@ section.section_main .main_advantages .main_advantage_title {
   position: relative;
   z-index: 1;
   width: 100%;
-  height: auto;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
 .portfolio .portfolio_wrapper_slider_img .client_img img_open {
   opacity: 1;
@@ -1564,7 +1581,7 @@ section.section_main .main_advantages .main_advantage_title {
 }
 @media screen and (min-width: 767px) and (min-width: 1025px) {
   .portfolio_bg {
-    top: 40%;
+    top: 50%;
     width: 50%;
     height: 100vh;
   }
@@ -1577,11 +1594,18 @@ section.section_main .main_advantages .main_advantage_title {
 .portfolio_slider_title {
   position: absolute;
   width: 100%;
-  height: 140%;
+  height: 100%;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
   z-index: 3;
+}
+.portfolio_slider_title .slick-list {
+  max-height: calc(100% + 23%);
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
 }
 .portfolio_slider_title .slick-center .client_site {
   color: #302E32;
@@ -1607,10 +1631,10 @@ section.section_main .main_advantages .main_advantage_title {
 }
 @media screen and (min-width: 400px) and (min-width: 767px) and (min-width: 1024px) {
   .portfolio_slider_title .slider_title_item {
-    height: 12.6vh;
+    height: 135px;
   }
 }
-@media screen and (min-width: 400px) and (min-width: 767px) and (min-width: 1024px) and (min-width: 1025px) {
+@media screen and (min-width: 400px) and (min-width: 767px) and (min-width: 1024px) and (min-width: 1700px) {
   .portfolio_slider_title .slider_title_item {
     height: 20vh;
   }
@@ -1619,7 +1643,7 @@ section.section_main .main_advantages .main_advantage_title {
 .client_site {
   display: block;
   height: 40%;
-  color: transparent;
+  color: #fff;
   -webkit-text-stroke: 2px #302E32;
   text-align: center;
   z-index: 2;
@@ -1662,6 +1686,13 @@ section.section_main .main_advantages .main_advantage_title {
   font-weight: 400;
   margin-bottom: 3.33rem;
 }
+@media screen and (min-width: 1025px) {
+  .wrapper_list_clients .list_clients_title {
+    font-size: 4.44rem;
+    line-height: 6rem;
+    margin-bottom: 0;
+  }
+}
 .wrapper_list_clients .list_clients {
   display: flex;
   flex-direction: row;
@@ -1671,6 +1702,11 @@ section.section_main .main_advantages .main_advantage_title {
 @media screen and (min-width: 767px) {
   .wrapper_list_clients .list_clients {
     margin-bottom: 10rem;
+  }
+}
+@media screen and (min-width: 767px) and (min-width: 1025px) {
+  .wrapper_list_clients .list_clients {
+    margin-bottom: 0;
   }
 }
 .wrapper_list_clients .list_clients_item {
@@ -1695,21 +1731,38 @@ section.section_main .main_advantages .main_advantage_title {
     margin-bottom: 5rem;
   }
 }
+@media screen and (min-width: 767px) and (min-height: 600px) and (max-height: 700px) {
+  .wrapper_list_clients .list_clients_item:nth-child(n+4) {
+    display: none;
+  }
+}
 @media screen and (min-width: 767px) and (min-width: 1025px) {
   .wrapper_list_clients .list_clients_item {
+    display: block;
     width: calc(33% - 4rem);
-    margin-bottom: 10rem;
+    margin-bottom: 4vh;
   }
 }
 @media screen and (min-width: 767px) and (min-width: 1025px) and (min-width: 1700px) {
   .wrapper_list_clients .list_clients_item {
-    height: 7vh;
+    height: 12vh;
+    margin-bottom: 8vh;
     width: calc(33% - 5rem);
   }
 }
 @media screen and (min-width: 767px) {
   .wrapper_list_clients .list_clients_item:nth-child(n+3) {
     margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .wrapper_list_clients .list_clients_item .client_logo {
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    transform: translate(-50%, -50%);
   }
 }
 .wrapper_list_clients .list_clients_item .client_logo img {
@@ -1737,7 +1790,12 @@ section.section_main .main_advantages .main_advantage_title {
   .wrapper_list_clients .list_clients_item .client_title {
     font-size: 2.4rem;
     line-height: 2.7rem;
-    bottom: -100%;
+    bottom: -30%;
+  }
+}
+@media screen and (min-width: 767px) and (min-width: 1025px) and (min-width: 1700px) {
+  .wrapper_list_clients .list_clients_item .client_title {
+    bottom: -40%;
   }
 }
 
@@ -1968,14 +2026,9 @@ section.section_main .main_advantages .main_advantage_title {
 }
 @media screen and (min-width: 767px) and (min-width: 1025px) {
   .section_contacts {
-    padding: 8vh 11.5rem 5vh;
+    padding: 0 11.5rem;
     display: flex;
     align-items: center;
-  }
-}
-@media screen and (min-width: 767px) and (min-width: 1025px) and (min-width: 1700px) {
-  .section_contacts {
-    padding: 20vh 11.5rem 10vh;
   }
 }
 .section_contacts .form_title {

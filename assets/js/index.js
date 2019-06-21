@@ -82,15 +82,43 @@ $(document).ready(
                 arrows: false,
             });
             $('.portfolio_slider_title').slick({
+                mobileFirst: true,
                 asNavFor: '.portfolio_slider_img',
                 vertical: true,
                 dots: false,
                 infinite: true,
-                slidesToShow: 3,
+                slidesToShow: 2,
                 slidesToScroll: 1,
                 arrows: false,
                 centerMode:true,
-                centerPadding: '45px',
+                centerPadding: '25%',
+                responsive: [
+                    {
+                        breakpoint: 1250,
+                        settings: {
+                            centerPadding: '35%',
+                        }
+                    },
+                    {
+                        breakpoint: 1300,
+                        settings: {
+                            centerPadding: '24%',
+                        }
+                    },
+                    {
+                        breakpoint: 1400,
+                        settings: {
+                            centerPadding: '35%',
+                        }
+                    },
+                    {
+                        breakpoint: 1700,
+                        settings: {
+                            centerPadding: '28%',
+                        }
+                    },
+
+                    ],
             });
             $('.portfolio_slider_img').slick({
                 swipe: false,
@@ -160,6 +188,13 @@ $(document).ready(
                 $('.wrapper_pop_up_portfolio').removeClass('wrapper_pop_up_portfolio_open');
             })
         })();
+        (function () {
+            $('#fullpage').fullpage({
+                scrollOverflow:true,
+                anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+                menu: ".navigation_menu"
+            });
 
+        })();
     })()
 );
