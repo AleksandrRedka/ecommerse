@@ -749,6 +749,11 @@ section.section_main .main_slogan_text p {
     line-height: 2.7rem;
   }
 }
+@media screen and (width: 1024px) and (height: 768px) {
+  section.section_main .main_slogan_text p {
+    line-height: 4rem;
+  }
+}
 section.section_main .main_slogan_text p:last-child {
   margin-bottom: 0;
 }
@@ -1175,10 +1180,15 @@ section.section_main .main_advantages .main_advantage_title {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  border-radius: 5px;
   margin-bottom: 1.5rem;
   background-color: rgba(31, 29, 32, 0.5);
   transition: background-color 500ms;
+}
+.wrapper_services .services_list .service:nth-child(even) {
+  border-radius: 0 5px 5px 0;
+}
+.wrapper_services .services_list .service:nth-child(odd) {
+  border-radius: 5px 0 0 5px;
 }
 @media screen and (min-width: 767px) {
   .wrapper_services .services_list .service {
@@ -1567,6 +1577,11 @@ section.section_main .main_advantages .main_advantage_title {
     height: 45vh;
   }
 }
+@media screen and (width: 1024px) and (height: 768px) {
+  .portfolio .portfolio_wrapper_slider_img .client_img {
+    height: 50vh;
+  }
+}
 .portfolio .portfolio_wrapper_slider_img .client_img img {
   position: relative;
   z-index: 1;
@@ -1660,32 +1675,37 @@ section.section_main .main_advantages .main_advantage_title {
     height: 11vh;
   }
 }
-@media screen and (min-width: 400px) and (min-width: 767px) and (min-width: 1024px) {
+@media screen and (min-width: 400px) and (min-width: 767px) and (width: 1024px) and (height: 768px) {
+  .portfolio_slider_title .slider_title_item {
+    height: 11.5rem;
+  }
+}
+@media screen and (min-width: 400px) and (min-width: 767px) and (width: 1024px) and (height: 768px) and (min-width: 1024px) {
   .portfolio_slider_title .slider_title_item {
     height: 12vh;
   }
 }
-@media screen and (min-width: 400px) and (min-width: 767px) and (min-width: 1024px) and (min-width: 1200px) {
+@media screen and (min-width: 400px) and (min-width: 767px) and (width: 1024px) and (height: 768px) and (min-width: 1024px) and (min-width: 1200px) {
   .portfolio_slider_title .slider_title_item {
     height: 135px;
   }
 }
-@media screen and (min-width: 400px) and (min-width: 767px) and (min-width: 1024px) and (min-width: 1200px) and (min-width: 1366px) {
+@media screen and (min-width: 400px) and (min-width: 767px) and (width: 1024px) and (height: 768px) and (min-width: 1024px) and (min-width: 1200px) and (min-width: 1366px) {
   .portfolio_slider_title .slider_title_item {
     height: 135px;
   }
 }
-@media screen and (min-width: 400px) and (min-width: 767px) and (min-width: 1024px) and (min-width: 1200px) and (min-width: 1366px) and (height: 768px) {
+@media screen and (min-width: 400px) and (min-width: 767px) and (width: 1024px) and (height: 768px) and (min-width: 1024px) and (min-width: 1200px) and (min-width: 1366px) and (height: 768px) {
   .portfolio_slider_title .slider_title_item {
     height: 18vh;
   }
 }
-@media screen and (min-width: 400px) and (min-width: 767px) and (min-width: 1024px) and (min-width: 1200px) and (min-width: 1400px) {
+@media screen and (min-width: 400px) and (min-width: 767px) and (width: 1024px) and (height: 768px) and (min-width: 1024px) and (min-width: 1200px) and (min-width: 1400px) {
   .portfolio_slider_title .slider_title_item {
     height: 15.2vh;
   }
 }
-@media screen and (min-width: 400px) and (min-width: 767px) and (min-width: 1024px) and (min-width: 1200px) and (min-width: 1400px) and (min-width: 1700px) {
+@media screen and (min-width: 400px) and (min-width: 767px) and (width: 1024px) and (height: 768px) and (min-width: 1024px) and (min-width: 1200px) and (min-width: 1400px) and (min-width: 1700px) {
   .portfolio_slider_title .slider_title_item {
     height: 20vh;
   }
@@ -1801,12 +1821,17 @@ section.section_main .main_advantages .main_advantage_title {
     margin-bottom: 0;
   }
 }
+@media screen and (width: 1024px) and (height: 768px) {
+  .wrapper_list_clients .list_clients_item .client_logo {
+    width: 60%;
+  }
+}
 @media screen and (min-width: 1025px) {
   .wrapper_list_clients .list_clients_item .client_logo {
     top: 50%;
     position: absolute;
     left: 50%;
-    width: 100%;
+    width: 85%;
     height: auto;
     transform: translate(-50%, -50%);
   }
@@ -2007,6 +2032,12 @@ section.section_main .main_advantages .main_advantage_title {
   .about_technology p {
     font-size: 15rem;
     line-height: 18rem;
+  }
+}
+@media screen and (min-width: 767px) and (width: 1024px) and (height: 768px) {
+  .about_technology p {
+    font-size: 20rem;
+    line-height: 20rem;
   }
 }
 @media screen and (min-width: 767px) and (min-width: 1025px) {
@@ -2372,6 +2403,7 @@ section.section_main .main_advantages .main_advantage_title {
 .contacts_map {
   padding: 0 2.5rem;
   height: 40vh;
+  box-shadow: 0px 0px 40px 20px #302E32;
 }
 @media screen and (min-width: 767px) {
   .contacts_map {
