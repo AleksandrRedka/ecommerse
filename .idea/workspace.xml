@@ -172,7 +172,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assets/css/pop_up.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
+                <state relative-caret-position="96">
                   <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
                 </state>
               </provider>
@@ -253,7 +253,7 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-1" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
@@ -332,18 +332,18 @@
       <workItem from="1560335650620" duration="49505000" />
       <workItem from="1560765742359" duration="5922000" />
       <workItem from="1560837012932" duration="12337000" />
-      <workItem from="1560942440361" duration="35550000" />
+      <workItem from="1560942440361" duration="35744000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127656000" />
+    <option name="totallyTimeSpent" value="127850000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="23" width="1440" height="820" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18025751" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18025751" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -565,7 +565,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/pop_up.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
+        <state relative-caret-position="96">
           <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
         </state>
       </provider>

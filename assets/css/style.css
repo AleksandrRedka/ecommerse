@@ -1596,12 +1596,18 @@ section.section_main .main_advantages .main_advantage_title {
   .portfolio_bg {
     top: 50%;
     width: 50%;
-    height: 100vh;
+    height: 85vh;
   }
 }
 .portfolio_bg img {
   width: 100%;
   height: auto;
+}
+@media screen and (min-width: 1025px) {
+  .portfolio_bg img {
+    height: 100%;
+    width: auto;
+  }
 }
 
 .portfolio_slider_title {
