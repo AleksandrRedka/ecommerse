@@ -142,6 +142,14 @@ $(document).ready(
                         settings: {
                             centerPadding: '28%',
                         }
+
+                    },
+                    {
+                        breakpoint: 1700,
+                        settings: {
+                            centerPadding: '30%',
+                        }
+
                     },
 
                     ],

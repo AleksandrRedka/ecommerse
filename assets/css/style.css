@@ -1100,11 +1100,15 @@ section.section_main .main_advantages .main_advantage_title {
     cursor: pointer;
     width: 25%;
   }
+  .wrapper_services .advantages_btn:hover {
+    height: 6rem;
+  }
 }
 @media screen and (min-width: 767px) and (min-width: 1025px) and (min-width: 1025px) {
   .wrapper_services .advantages_btn:hover:after {
     max-height: 4.7rem;
-    height: 4.7rem;
+    display: block;
+    bottom: 2.3rem;
   }
 }
 .wrapper_services .advantages_btn:after {
@@ -1125,10 +1129,11 @@ section.section_main .main_advantages .main_advantage_title {
 }
 @media screen and (min-width: 767px) and (min-width: 1025px) {
   .wrapper_services .advantages_btn:after {
-    height: 5px;
     max-height: 5px;
     z-index: 1;
     width: 100%;
+    height: 100%;
+    display: block;
   }
 }
 .wrapper_services .advantages_btn p {
@@ -1170,6 +1175,7 @@ section.section_main .main_advantages .main_advantage_title {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  border-radius: 5px;
   margin-bottom: 1.5rem;
   background-color: rgba(31, 29, 32, 0.5);
   transition: background-color 500ms;
@@ -1564,7 +1570,7 @@ section.section_main .main_advantages .main_advantage_title {
 .portfolio .portfolio_wrapper_slider_img .client_img img {
   position: relative;
   z-index: 1;
-  width: 100%;
+  width: auto;
   height: 100%;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -1636,6 +1642,7 @@ section.section_main .main_advantages .main_advantage_title {
   text-shadow: 0 -2px #fff, 2px 0 #fff, 0 2px #fff, -2px 1px #fff;
 }
 .portfolio_slider_title .slider_title_item {
+  cursor: pointer;
   height: 18vw;
 }
 @media screen and (min-width: 350px) {
@@ -1938,7 +1945,7 @@ section.section_main .main_advantages .main_advantage_title {
     left: -33vh;
     height: 80vh;
     bottom: auto;
-    top: 1vh;
+    top: 5vh;
     width: auto;
   }
 }
@@ -2030,7 +2037,7 @@ section.section_main .main_advantages .main_advantage_title {
 }
 @media screen and (min-width: 767px) and (min-width: 1025px) {
   .about_technology .about_technology_bg {
-    top: 1vh;
+    top: 5vh;
     left: auto;
     right: -35vh;
     height: 80vh;
@@ -2040,7 +2047,7 @@ section.section_main .main_advantages .main_advantage_title {
 }
 @media screen and (min-width: 767px) and (min-width: 1025px) and (min-width: 1700px) {
   .about_technology .about_technology_bg {
-    right: -37vh;
+    right: -37.5vh;
     height: 85vh;
   }
 }
@@ -2236,6 +2243,7 @@ section.section_main .main_advantages .main_advantage_title {
   transform: translate(-50%, -50%) rotate(135deg);
 }
 .form_connect .form_button_brief .wrapper_add_brief .downloader_brief {
+  cursor: pointer;
   opacity: 0;
   padding: 1rem;
   width: 6rem;
@@ -2258,6 +2266,7 @@ section.section_main .main_advantages .main_advantage_title {
   height: auto;
 }
 .form_connect .form_button_brief .wrapper_add_brief .post_brief {
+  cursor: pointer;
   opacity: 0;
   padding: 1rem;
   width: 6rem;
@@ -2280,7 +2289,7 @@ section.section_main .main_advantages .main_advantage_title {
   height: auto;
 }
 .form_connect .form_button_brief .wrapper_add_brief .brief_open {
-  position: static;
+  position: relative;
   opacity: 1;
   transition: opacity 500ms;
 }
@@ -2348,6 +2357,16 @@ section.section_main .main_advantages .main_advantage_title {
     font-size: 1.8rem;
     line-height: 2.4rem;
   }
+}
+
+.title_brief_icon {
+  font-size: 1rem;
+  line-height: 2.4rem;
+  color: #fff;
+  position: absolute;
+  bottom: -4rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .contacts_map {
@@ -2637,8 +2656,14 @@ section.section_main .main_advantages .main_advantage_title {
 .wrapper_pop_up .pop_up_main .pop_button_brief .pop_downloader_brief {
   border: 1px solid #302E32;
 }
+.wrapper_pop_up .pop_up_main .pop_button_brief .pop_downloader_brief .title_brief_icon {
+  color: #302E32;
+}
 .wrapper_pop_up .pop_up_main .pop_button_brief .pop_post_brief {
   border: 1px solid #302E32;
+}
+.wrapper_pop_up .pop_up_main .pop_button_brief .pop_post_brief .title_brief_icon {
+  color: #302E32;
 }
 .wrapper_pop_up .pop_up_main .pop_up_btn {
   border-radius: 0;
@@ -2815,11 +2840,17 @@ section.section_main .main_advantages .main_advantage_title {
     height: 12%;
   }
 }
+.wrapper_pop_up_portfolio .pop_up_portfolio_info {
+  width: 100%;
+}
 @media screen and (min-width: 1025px) {
   .wrapper_pop_up_portfolio .pop_up_portfolio_info {
+    position: absolute;
+    top: calc(20% + 15rem);
+    left: calc(10% + 13rem );
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 20%;
   }
 }
 @media screen and (min-width: 767px) {
@@ -2889,7 +2920,8 @@ section.section_main .main_advantages .main_advantage_title {
 }
 @media screen and (min-width: 1025px) {
   .wrapper_pop_up_portfolio .pop_up_portfolio_img {
-    width: 70%;
+    width: 100%;
+    padding-left: 30%;
   }
 }
 .wrapper_pop_up_portfolio .pop_up_portfolio_img_site {

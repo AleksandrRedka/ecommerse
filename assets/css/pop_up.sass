@@ -122,8 +122,12 @@
           background-color: $white
       .pop_downloader_brief
         border: 1px solid $black
+        .title_brief_icon
+          color: $black
       .pop_post_brief
         border: 1px solid $black
+        .title_brief_icon
+          color: $black
     .pop_up_btn
       border-radius: 0
       background: $black
@@ -257,10 +261,14 @@
           top: 8%
           height: 12%
     &_info
+      width: 100%
       @media screen and (min-width: $tablet)
+        position: absolute
+        top: calc(20% + 15rem)
+        left: calc(10% + 13rem )
         display: flex
         flex-direction: column
-        width: 30%
+        width: 20%
     &_text
       @media screen and (min-width: $mobile)
         display: flex
@@ -312,7 +320,8 @@
 
     &_img
       @media screen and (min-width: $tablet)
-        width: 70%
+        width: 100%
+        padding-left: 30%
       &_site
         width: 100%
         height: auto

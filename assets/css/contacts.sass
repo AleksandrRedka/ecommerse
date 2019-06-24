@@ -132,6 +132,7 @@
           transform: translate(-50%,-50%) rotate(135deg)
 
       .downloader_brief
+        cursor: pointer
         opacity: 0
         padding: 1rem
         width: 6rem
@@ -150,6 +151,7 @@
           height: auto
 
       .post_brief
+        cursor: pointer
         opacity: 0
         padding: 1rem
         width: 6rem
@@ -168,7 +170,7 @@
           height: auto
 
       .brief_open
-        position: static
+        position: relative
         opacity: 1
         transition: opacity 500ms
   .form_btn
@@ -214,7 +216,14 @@
           font-size: 1.8rem
           line-height: 2.4rem
 
-
+.title_brief_icon
+  font-size: 1rem
+  line-height: 2.4rem
+  color: $white
+  position: absolute
+  bottom: -4rem
+  left: 50%
+  transform: translate(-50%,-50%)
 
 .contacts_map
   padding: 0 2.5rem
