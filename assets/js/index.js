@@ -57,6 +57,16 @@ $(document).ready(
             } )
         })();
         (function () {
+            if ($(window).width() >= '768') {
+                const myFullpage = new fullpage('#fullpage', {
+                    scrollOverflow: true,
+                    scrollingSpeed: 800,
+                    menu: ".navigation_menu",
+                    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+                });
+            }
+        })();
+        (function () {
             if ($(window).width() <= '1024') {
                 $('.menu-js').click(function () {
                     $('body').toggleClass('body_hidden');
@@ -184,9 +194,11 @@ $(document).ready(
             $('.call-js').click(function () {
                 $('body').addClass('body_hidden');
                 $('.wrapper_pop_up').addClass('wrapper_pop_up_open');
+                fullpage_api.setAllowScrolling(false);
             });
             $('.close-pop-js').click(function () {
                 $('body').removeClass('body_hidden');
+                fullpage_api.setAllowScrolling(true);
                 $('.wrapper_pop_up').removeClass('wrapper_pop_up_open');
             });
 
@@ -217,24 +229,13 @@ $(document).ready(
                 $('.wrapper_pop_up_portfolio').addClass('wrapper_pop_up_portfolio_open');
 
             });
+            document.querySelector('.wrapper_pop_up_portfolio').onwheel = e => e.stopPropagation();
             $('.close-pop-portfolio-js').click(function () {
+                // fullpage_api.setAllowScrolling(true);
                 $('body').removeClass('body_hidden');
                 $('.wrapper_pop_up_portfolio').removeClass('wrapper_pop_up_portfolio_open');
             })
         })();
-        (function () {
-            if ($(window).width() >= '768') {
-                const myFullpage = new fullpage('#fullpage', {
-                    scrollOverflow: true,
-                    scrollingSpeed: 800,
-                    menu: ".navigation_menu",
-                    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
-                    licenseKey: '7474674747',
-                });
-            }
-        })();
-        (function () {
 
-        })();
     })()
 );
