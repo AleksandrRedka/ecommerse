@@ -1680,32 +1680,32 @@ section.section_main .main_advantages .main_advantage_title {
     height: 11.5rem;
   }
 }
-@media screen and (min-width: 400px) and (min-width: 767px) and (width: 1024px) and (height: 768px) and (min-width: 1024px) {
+@media screen and (min-width: 400px) and (min-width: 767px) and (min-width: 1024px) {
   .portfolio_slider_title .slider_title_item {
     height: 12vh;
   }
 }
-@media screen and (min-width: 400px) and (min-width: 767px) and (width: 1024px) and (height: 768px) and (min-width: 1024px) and (min-width: 1200px) {
+@media screen and (min-width: 400px) and (min-width: 767px) and (min-width: 1024px) and (min-width: 1200px) {
   .portfolio_slider_title .slider_title_item {
     height: 135px;
   }
 }
-@media screen and (min-width: 400px) and (min-width: 767px) and (width: 1024px) and (height: 768px) and (min-width: 1024px) and (min-width: 1200px) and (min-width: 1366px) {
+@media screen and (min-width: 400px) and (min-width: 767px) and (min-width: 1024px) and (min-width: 1200px) and (min-width: 1366px) {
   .portfolio_slider_title .slider_title_item {
     height: 135px;
   }
 }
-@media screen and (min-width: 400px) and (min-width: 767px) and (width: 1024px) and (height: 768px) and (min-width: 1024px) and (min-width: 1200px) and (min-width: 1366px) and (height: 768px) {
+@media screen and (min-width: 400px) and (min-width: 767px) and (min-width: 1024px) and (min-width: 1200px) and (min-width: 1366px) and (height: 768px) {
   .portfolio_slider_title .slider_title_item {
     height: 18vh;
   }
 }
-@media screen and (min-width: 400px) and (min-width: 767px) and (width: 1024px) and (height: 768px) and (min-width: 1024px) and (min-width: 1200px) and (min-width: 1400px) {
+@media screen and (min-width: 400px) and (min-width: 767px) and (min-width: 1024px) and (min-width: 1200px) and (min-width: 1400px) {
   .portfolio_slider_title .slider_title_item {
     height: 15.2vh;
   }
 }
-@media screen and (min-width: 400px) and (min-width: 767px) and (width: 1024px) and (height: 768px) and (min-width: 1024px) and (min-width: 1200px) and (min-width: 1400px) and (min-width: 1700px) {
+@media screen and (min-width: 400px) and (min-width: 767px) and (min-width: 1024px) and (min-width: 1200px) and (min-width: 1400px) and (min-width: 1700px) {
   .portfolio_slider_title .slider_title_item {
     height: 20vh;
   }
@@ -2401,9 +2401,10 @@ section.section_main .main_advantages .main_advantage_title {
 }
 
 .contacts_map {
+  position: relative;
   padding: 0 2.5rem;
   height: 40vh;
-  box-shadow: 0px 0px 40px 20px #302E32;
+  overflow: hidden;
 }
 @media screen and (min-width: 767px) {
   .contacts_map {
@@ -2416,9 +2417,21 @@ section.section_main .main_advantages .main_advantage_title {
     width: 100%;
   }
 }
-.contacts_map iframe {
+.contacts_map:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  box-shadow: inset 0px 0px 10px 50px #302E32;
+}
+
+#map {
+  width: 140%;
+  height: 140%;
+  top: -20%;
+  left: -20%;
 }
 
 .footer {

@@ -226,15 +226,29 @@
   transform: translate(-50%,-50%)
 
 .contacts_map
+  position: relative
   padding: 0 2.5rem
   height: 40vh
-  box-shadow: 0px 0px 40px 20px $black
+  overflow: hidden
   @media screen and (min-width: $mobile)
     height: 50vh
     @media screen and (min-width: $tablet)
       height: 70vh
       width: 100%
-  iframe
+  &:after
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
     width: 100%
     height: 100%
+    box-shadow: inset 0px 0px 10px 50px $black
+
+#map
+  width: 140%
+  height: 140%
+  top: -20%
+  left: -20%
+
+
 
