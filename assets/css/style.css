@@ -483,11 +483,18 @@ header {
     opacity: 1;
     transform: translate(-50%, -50%);
     top: 50%;
-    left: -55%;
+    left: -4vw;
     height: 3rem;
     font-weight: 200;
     text-shadow: 0px 0px 6px #000000;
   }
+}
+@media screen and (min-width: 1025px) and (min-width: 1700px) {
+  .wrapper_nav .navigation_menu .active p {
+    left: -3.5vw;
+  }
+}
+@media screen and (min-width: 1025px) {
   .wrapper_nav .navigation_menu .active:hover {
     min-height: 0.5rem;
     min-width: 6vw;
