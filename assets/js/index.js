@@ -76,6 +76,16 @@ $(document).ready(
                 })
             }
         })();
+        (function(){
+            if ($(window).width() <= '1024') {
+                $('.close-menu').click(function () {
+                    $('body').toggleClass('body_hidden');
+                    $('.menu-js').toggleClass('wrapper_burger_open');
+                    $('.wrapper_nav').toggleClass('wrapper_nav_open');
+                    $('.navigation_menu_bg').toggleClass('navigation_menu_bg_open');
+                })
+            }
+        })();
         (function () {
             $('.brief-js').click(function () {
                 $(this).toggleClass('add_brief_open');
@@ -173,8 +183,8 @@ $(document).ready(
                 slidesToScroll: 1,
                 asNavFor: '.portfolio_slider_text,.portfolio_slider_title',
                 arrows: true,
-                prevArrow: '<button class="slick-review slick-prev portfolio-slider-prev"><img src="assets/img/svg/Path%20127.svg" alt=""></button>',
-                nextArrow: '<button class="slick-review slick-next portfolio-slider-next"><img src="assets/img/svg/Path%20126.svg" alt=""></button>',
+                prevArrow: '<button class="slick-review slick-prev portfolio-slider-prev"><img src="http://thelab-agency.kiev.ua/wp-content/themes/ardeil/assets/img/svg/Path 127.svg" alt=""></button>',
+                nextArrow: '<button class="slick-review slick-next portfolio-slider-next"><img src="http://thelab-agency.kiev.ua/wp-content/themes/ardeil/assets/img/svg/Path 126.svg" alt=""></button>',
             });
         })();
         (function () {
@@ -194,12 +204,16 @@ $(document).ready(
             $('.call-js').click(function () {
                 $('body').addClass('body_hidden');
                 $('.wrapper_pop_up').addClass('wrapper_pop_up_open');
-                fullpage_api.setAllowScrolling(false);
+                if ($(window).width() >= '768') {
+                    fullpage_api.setAllowScrolling(false);
+                }
             });
             $('.close-pop-js').click(function () {
                 $('body').removeClass('body_hidden');
-                fullpage_api.setAllowScrolling(true);
                 $('.wrapper_pop_up').removeClass('wrapper_pop_up_open');
+                if ($(window).width() >= '768'){
+                    fullpage_api.setAllowScrolling(true);
+                }
             });
 
         })();
@@ -219,19 +233,16 @@ $(document).ready(
                 $('body').addClass('body_hidden');
                 let titleCompany = $(this).text();
                 let linkCompany=$('.slick-active').find('a.clients_info_link').attr('href');
-                // let aboutCompany =$('.slick-active').find('div.clients_info_text').text();
 
 
                 $('.pop_up_portfolio_title').text(titleCompany);
                 $('.client_url').attr('href', linkCompany);
-                // $('.pop_up_portfolio_text').text(aboutCompany);
 
                 $('.wrapper_pop_up_portfolio').addClass('wrapper_pop_up_portfolio_open');
 
             });
             document.querySelector('.wrapper_pop_up_portfolio').onwheel = e => e.stopPropagation();
             $('.close-pop-portfolio-js').click(function () {
-                // fullpage_api.setAllowScrolling(true);
                 $('body').removeClass('body_hidden');
                 $('.wrapper_pop_up_portfolio').removeClass('wrapper_pop_up_portfolio_open');
             })
