@@ -62,7 +62,7 @@ $(document).ready(
                     scrollOverflow: true,
                     scrollingSpeed: 800,
                     menu: ".navigation_menu",
-                    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+                    anchors: ['main', 'service', 'portfolio', 'about', 'contacts', 'footer'],
                 });
             }
         })();
